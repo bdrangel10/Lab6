@@ -1,11 +1,8 @@
 package grupo4.lab6.modelo;
 
+import java.io.File;
 import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import javax.json.JsonArray;
 
 /**
  *
@@ -23,40 +20,51 @@ public class Usuario implements Serializable
     //@NotNull
     private String password;
     
-    public Usuario(String nLogin, String nPassword)
+    private int puerto;
+    
+    private File carpeta;
+    
+    private String suscripciones;
+    
+    public Usuario(String nLogin, String nPassword, int nPuerto, File nCarpeta)
     {
         login=nLogin;
         password=nPassword;
+        puerto=nPuerto;
+        carpeta=nCarpeta;
+        suscripciones="[";
+        //Las suscripciones siempre van a llegar en JSon desde el cliente
+    }
+    
+    public File darDirectorioUsuario()
+    {
+        return carpeta;
     }
         
     public String getLogin() {
         return login;
     }
     
-    /*
-    public boolean isPassword(String nPassword)
+    public int getPuerto()
     {
-        return password.equals(nPassword);
+        return puerto;
     }
-
-    
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    */
 
     public boolean esPassCorrecto(String nPassword) {
         return this.password.equals(nPassword);
     }
+    
+    public void actualizarSuscripciones (String nSuscripciones)
+    {
+        suscripciones=nSuscripciones;
+    }
+    
+    public String darSuscripciones()
+    {
+        return suscripciones+"]";
+    }
+    
+    
     
     
 }

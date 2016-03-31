@@ -2,15 +2,20 @@ package grupo4.lab6.websocket;
 
 import grupo4.lab6.modelo.Usuario;
 import grupo4.lab6.persistence.PersistenceManager;
+import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
+import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.spi.JsonProvider;
 import javax.persistence.EntityManager;
@@ -26,8 +31,29 @@ import javax.websocket.Session;
 @ApplicationScoped
 public class AdministradorSesiones 
 {
-    private final Set sesiones = new HashSet<>();
-    private final ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
+    private static final List<Usuario> usuarios = Collections.synchronizedList(new LinkedList<Usuario>()); 
+    private static final Set<Session> sesiones = Collections.synchronizedSet(new HashSet<Session>()); 
+    
+    public final static String DIR_RAIZ_USUARIOS=".\\";
+    private final static int PUERTO_INICIAL=15000;
+    private int puertoActual;
+    private String canales;
+    
+    
+    
+    public synchronized int darNuevoPuerto()
+    {
+        puertoActual++;
+        return puertoActual;
+    }
+    
+    public AdministradorSesiones()
+    {
+        //TODO Cargar el archivo serializado
+        puertoActual=PUERTO_INICIAL;
+        canales = "[";
+    }
+        
     
     /*
     @PersistenceContext(unitName = "UsuariosPU")
@@ -70,16 +96,16 @@ public class AdministradorSesiones
         sesiones.remove(session);
     }
     
-    public boolean usuarioExiste(String login)
+    public Usuario buscarUsuario(String login)
     {
         for(Usuario u: usuarios)
         {
             if(u.getLogin().equals(login))
             {
-                return true;
+                return u;
             }
         }
-        return false;
+        return null;
         /*
         inicializarDB();
         Query q = entityManager.createQuery("select u from Usuario u where u.login='"+login+"'");
@@ -88,16 +114,9 @@ public class AdministradorSesiones
         */
     }
     
-    public boolean login(String login, String password)
+    public boolean login(Usuario usuario, String password)
     {
-        for(Usuario u: usuarios)
-        {
-            if(u.getLogin().equals(login))
-            {
-                return u.esPassCorrecto(password);
-            }
-        }
-        return false;
+        return usuario.esPassCorrecto(password);
         /*
         Query q = entityManager.createQuery("select u from Usuario u where u.login='"+login+"'");
         Usuario encontrado = (Usuario)q.getSingleResult();
@@ -105,37 +124,24 @@ public class AdministradorSesiones
         */
     }
 
-    public String registrarUsuario(String login, String password)
+    /**
+     * Pre: EL usuario no existe
+     * @param login
+     * @param password
+     * @return 
+     */
+    public Usuario registrarUsuario(String login, String password)
     {
-        Usuario nuevo = new Usuario(login, password);
-        usuarios.add(nuevo);
-        return login;
-        /*
-        inicializarDB();
-        String loginRegistradoError;
-        Usuario nuevo = new Usuario(login, password);
-        try 
-        {
-            entityManager.getTransaction().begin();
-            entityManager.persist(nuevo);
-            entityManager.getTransaction().commit();
-            entityManager.refresh(nuevo);
-            loginRegistradoError=login;
-        } catch (Throwable t) 
-        {
-            t.printStackTrace();
-            if (entityManager.getTransaction().isActive()) 
-            {
-                entityManager.getTransaction().rollback();
-            }
-            nuevo = null;
-            loginRegistradoError="ERROR"+t.getMessage();
-        } finally {
-            entityManager.clear();
-            entityManager.close();
-        }
-        return loginRegistradoError;
-        */
+        int puerto = darNuevoPuerto();
+        File directorioUsuario = new File(DIR_RAIZ_USUARIOS, ""+puerto);
+        Usuario nuevo = new Usuario(login, password, puerto, directorioUsuario);        
+        directorioUsuario.mkdirs();     
+        //Añade a la lista de canales
+        JsonObject jsonActual=JsonProvider.provider().createObjectBuilder().add("usuario",login).add("puerto", puerto).build();
+        canales.concat(jsonActual.toString());
+        //Agrega a la lista de usuarios
+        usuarios.add(nuevo);        
+        return nuevo;
     }
     
     public void enviarMsjSesion(Session session, JsonObject message) 
@@ -151,16 +157,37 @@ public class AdministradorSesiones
         }
     }
     
-    public JsonObject crearRespuesta(boolean logueado, boolean error, String msj)
+    public JsonObject crearRespuesta(boolean logueado, boolean error, String msj, String suscripcionesUsuario)
     {
         JsonProvider provider = JsonProvider.provider();
-        JsonObject respuesta = provider.createObjectBuilder()
-                .add("logueado", logueado)
-                .add("error", error)
-                .add("msj", msj)
-                .build();
+        JsonObject respuesta;
+        if (!logueado) 
+        {
+            respuesta = provider.createObjectBuilder()
+                    .add("logueado", logueado)
+                    .add("error", error)
+                    .add("msj", msj)
+                    .build();
+        }
+        else
+        {
+            
+            respuesta = provider.createObjectBuilder()
+                    .add("logueado", logueado)
+                    .add("error", error)
+                    .add("msj", msj)
+                    .add("canales", darListaCanales())
+                    .add("suscripciones", suscripcionesUsuario)
+                    .build();
+        }
+
         
         return respuesta;        
+    }
+    
+    public String darListaCanales()
+    {
+        return canales+"]";
     }
 
    

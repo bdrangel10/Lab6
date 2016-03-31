@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/style.css">       
     </head>
     <body ng-controller="controlador">
-        <textarea class="estilotextarea4" style="width: 100%; height: 50px">{{console}}</textarea>
+        <textarea class="estilotextarea4" style="width: 100%; height: 50px" id="consola">{{console}}</textarea>
         <div class="pen-title">
             <h1 style="font: bold">{{titulo}}</h1><span>STREAMING de Video del GRUPO4  <a ng-click="salir()" ng-if="resultado.logueado">(x)Cerrar sesión</a></span>
         </div>
@@ -23,7 +23,7 @@
             <div class="card" ng-if="!resultado.logueado"></div>
             <div class="card" ng-if="!resultado.logueado">
                 <h1 class="title">INGRESO</h1>
-                <form>
+                <form autocomplete="off">
                     <div class="input-container">
                         <input type="text" id="Username" required="required" ng-model="registro.username"/>
                         <label for="Username">Username</label>
@@ -47,7 +47,7 @@
                 <h1 class="title">REGÍSTRATE
                     <div class="close"></div>
                 </h1>
-                <form>
+                <form autocomplete="off">
                     <div class="input-container">
                         <input type="text" id="Username" required="required" ng-model="registro.username" value=""/>
                         <label for="Username">Username</label>
@@ -67,7 +67,7 @@
                     <div class="button-container">
                         <button ng-if="registro.password == registro.password1" ng-click="registrar()"><span>Registrarse</span></button>
                     </div>
-                    <div class="title" ng-if="resultado.error"><h1 style="color: red; font-size: 18px">{{resultado.msj_error}}</h1></div>
+                    <div class="title" ng-if="resultado.error"><h1 style="color: yellow; font-size: 18px">{{resultado.msj}}</h1></div>
                 </form>
             </div>
             

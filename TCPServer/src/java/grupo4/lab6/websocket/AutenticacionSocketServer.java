@@ -6,6 +6,7 @@
 
 package grupo4.lab6.websocket;
 
+import grupo4.lab6.modelo.Usuario;
 import java.io.StringReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -75,50 +76,52 @@ public class AutenticacionSocketServer {
 
             if ("ingresar".equals(jsonMessage.getString("accion"))) 
             {
-                if (administradorSesiones.usuarioExiste(usuario)) 
+                Usuario encontrado=administradorSesiones.buscarUsuario(usuario);
+                if (encontrado!=null) 
                 {
-                    if (administradorSesiones.login(usuario, contrasenia)) 
+                    if (encontrado.esPassCorrecto(contrasenia)) 
                     {
                         //Exitoso rta
-                        respuesta = administradorSesiones.crearRespuesta(true, false, "Ingreso exitoso para el usuario "+usuario);
+                        respuesta = administradorSesiones.crearRespuesta(true, false, "Ingreso exitoso para el usuario "+usuario, encontrado.darSuscripciones());
                     }
                     else
                     {
                         //Contraseña incorrecta
-                        respuesta = administradorSesiones.crearRespuesta(false, true, "La contraseña es incorrecta");
+                        respuesta = administradorSesiones.crearRespuesta(false, true, "La contraseña es incorrecta",null);
                         
                     }
                 }
                 else
                 {
                     //usuario no registrado
-                    respuesta = administradorSesiones.crearRespuesta(false, true, "Usuario no existe");
+                    respuesta = administradorSesiones.crearRespuesta(false, true, "Usuario no existe",null);
                 }
                 
             }
             else if ("registrar".equals(jsonMessage.getString("accion"))) 
             {
-                System.out.println("REGISTRAR***********");
+                System.out.println("REGISTRAR");
                 boolean bol = administradorSesiones==null;
                 System.out.println("ADMIN SESIONES nulo? "+bol);
-                if(!administradorSesiones.usuarioExiste(usuario))
+                Usuario encontrado = administradorSesiones.buscarUsuario(usuario);
+                if(encontrado==null)
                 {
-                    String resultado =administradorSesiones.registrarUsuario(usuario, contrasenia);
-                    if(!resultado.startsWith("ERROR"))
+                    Usuario resultado =administradorSesiones.registrarUsuario(usuario, contrasenia);
+                    if(resultado!=null)
                     {
                         //Se registró
-                        respuesta = administradorSesiones.crearRespuesta(true, false, "Usuario "+usuario +" registrado exitosamente");
+                        respuesta = administradorSesiones.crearRespuesta(true, false, "Usuario "+usuario +" registrado exitosamente", resultado.darSuscripciones());
                     }
                     else
                     {
                         //ERROR; ENVIAR RTA
-                        respuesta = administradorSesiones.crearRespuesta(false, true, resultado);
+                        respuesta = administradorSesiones.crearRespuesta(false, true, "ERROR al intentar crear el usuario",null);
                     }
                 }
                 else
                 {
                     //Usuario ya existe
-                    respuesta = administradorSesiones.crearRespuesta(false, true, "El usuario ya está registrado");
+                    respuesta = administradorSesiones.crearRespuesta(false, true, "El usuario ya está registrado",null);
                 }
             }
         }
