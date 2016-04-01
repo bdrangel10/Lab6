@@ -17,8 +17,8 @@
         <div class="pen-title">
             <h1 style="font: bold">{{titulo}}</h1><span>STREAMING de Video del GRUPO4  <a ng-click="salir()" ng-if="resultado.logueado">(x)Cerrar sesión</a></span>
         </div>
-        
-        
+
+
         <div class="container">
             <div class="card" ng-if="!resultado.logueado"></div>
             <div class="card" ng-if="!resultado.logueado">
@@ -56,32 +56,73 @@
                     <div class="input-container">
                         <input type="password" id="Password" required="required" ng-model="registro.password"/>
                         <label for="Password">Password</label>
-                        <div class="bar"></div>
+                        <div class="bar"></div>Mucha
                     </div>
                     <div class="input-container">
                         <input type="password" id="Repeat Password" required="required" ng-model="registro.password1"/>
                         <label>Repeat Password</label>
                         <div class="bar"></div>
                     </div>
-                    <div class="title" ng-if="registro.password != registro.password1"><h1 style="color: yellow; font-size: 18px">Las contraseñas deben coincidir</h1></div>
+                    <div class="title" ng-if="resultado.error"><h1 style="color: yellow; font-size: 18px">{{resultado.msj}}</h1></div>
+                    <div class="title" ng-if="registro.password != registro.password1" style="text-align: center"><h1 style="color: yellow; font-size: 18px">Las contraseñas deben coincidir</h1></div>                    
                     <div class="button-container">
                         <button ng-if="registro.password == registro.password1" ng-click="registrar()"><span>Registrarse</span></button>
                     </div>
-                    <div class="title" ng-if="resultado.error"><h1 style="color: yellow; font-size: 18px">{{resultado.msj}}</h1></div>
+
                 </form>
             </div>
-            
 
-            <div  ng-if="resultado.logueado">
-                <div class="pen-title">
-                    <h1 style="font-size: 20px; font-weight: bold; text-align: center">SELECCIONA EL CANAL QUE DESEAS VER</h1>
-                    <ul>
-                        <li><a href="https://otroserver.com">{{otro_video}} *****</a></li>
-                    </ul>
-                </div>
-            </div>
+            <!--SUSCRIPCIONES-->
+            <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaSuscritos">
+                <tr>
+                    <th ng-click="listarSuscripciones()" style="font-weight: 900">
+                        <img src="icons/cogwheel.png"  ng-click="administrar()" ng-if="!vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/>
+                        <strong>Mis suscripciones</strong>
+                    </th>
+                    <th ng-click="listarTodos()" id="tit_todos">
+                        Todos los canales
+                    </th>
+                </tr>
+                <tr ng-repeat="canal in canales" ng-if="canal.usuario != registro.username">
+                    <td data-th="Usuario">
+                        <img ng-click="ver(canal.usuario, canal.puerto)" src="icons/shapes.png"/>
+                        {{canal.usuario}}
+                    </td>    
+                </tr>                        
+            </table>
+
+            <!--ADMINISTRAR-->
+            <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaAdministrar">
+                <tr>
+                    <th><img src="icons/guardar.png"  ng-click="guardar()" ng-if="vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/></th>
+                </tr>
+                <tr ng-repeat="canal in canales" ng-if="canal.usuario != registro.username">
+                    <td data-th="Usuario">{{canal.usuario}}</td>
+                    <td data-th="visualizar" ng-click="ver(canal.usuario, canal.puerto)"><img src="icons/shapes.png"/></td>                            
+                </tr>                        
+            </table>
+
+            <!--TODOS-->
+            <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaTodos">
+                <tr>
+                    <th ng-click="listarSuscripciones()">
+                        <img src="icons/cogwheel.png"  ng-click="administrar()" ng-if="!vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/>
+                        Mis suscripciones
+                    </th>
+                    <th ng-click="listarTodos()"  style="font-weight: 900">
+                        <strong>Todos los canales</strong>
+                    </th>
+                </tr>
+                <tr ng-repeat="canal in canales" ng-if="canal.usuario != registro.username">
+                    <td data-th="Usuario">
+                        <img ng-click="ver(canal.usuario, canal.puerto)" src="icons/shapes.png"/>
+                        {{canal.usuario}}
+                    </td>    
+                </tr>                        
+            </table>
+
         </div>
-        
+
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src="js/index.js"></script>
     </body>

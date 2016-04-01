@@ -2,7 +2,14 @@ package grupo4.lab6.modelo;
 
 import java.io.File;
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import javax.json.*;
 import javax.json.JsonArray;
+import javax.json.JsonArrayBuilder;
+import javax.json.JsonObjectBuilder;
+import javax.json.JsonValue;
+import javax.json.spi.JsonProvider;
 
 /**
  *
@@ -24,7 +31,8 @@ public class Usuario implements Serializable
     
     private File carpeta;
     
-    private String suscripciones;
+    private JsonArray suscripciones;
+
     
     public Usuario(String nLogin, String nPassword, int nPuerto, File nCarpeta)
     {
@@ -32,8 +40,7 @@ public class Usuario implements Serializable
         password=nPassword;
         puerto=nPuerto;
         carpeta=nCarpeta;
-        suscripciones="[";
-        //Las suscripciones siempre van a llegar en JSon desde el cliente
+        suscripciones=JsonProvider.provider().createArrayBuilder().build();
     }
     
     public File darDirectorioUsuario()
@@ -54,14 +61,14 @@ public class Usuario implements Serializable
         return this.password.equals(nPassword);
     }
     
-    public void actualizarSuscripciones (String nSuscripciones)
+    public void actualizarSuscripciones (JsonArray nSuscripciones)
     {
         suscripciones=nSuscripciones;
     }
     
-    public String darSuscripciones()
+    public JsonArray darSuscripciones()
     {
-        return suscripciones+"]";
+        return suscripciones;
     }
     
     

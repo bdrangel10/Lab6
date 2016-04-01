@@ -5,12 +5,18 @@ app.controller("controlador", function($scope)
     $scope.titulo="INGRESA Y DISFRUTA";
     $scope.resultado={"error":false, "logueado":false, "msj":""};
     $scope.registro={"username":"", "password":"", "password1":"","accion":""};
-    $scope.console="";
-    $scope.suscripciones=[];
-    $scope.canales=[];
+    $scope.console = "";
+    $scope.suscripciones = [];
+    $scope.canales = [];
+    $scope.vercanal = "";
+    $scope.verusuario = "";
     
+    $scope.vistaSuscritos=false;
+    $scope.vistaAdministrar=false;
+    $scope.vistaTodos=false;
+
     //SI ESTÁ LOGUEADO RETORNA TANTO SUSCRIPCIONES COMO CANALES
-       
+
     $scope.entrar = function()
     {
         //Loguin socket
@@ -33,6 +39,7 @@ app.controller("controlador", function($scope)
                 $scope.resultado = JSON.parse(obtenido);
                 if ($scope.resultado.logueado)
                 {
+                    $scope.vistaSuscritos=true;
                     $scope.titulo = "BIENVENIDO " + $scope.registro.username;
                     $scope.console += "\nWS: RECIBIDO:" + obtenido;
                     $scope.suscripciones=$scope.resultado.suscripciones;
@@ -71,6 +78,7 @@ app.controller("controlador", function($scope)
                 $scope.resultado = JSON.parse(obtenido);
                 if ($scope.resultado.logueado)
                 {
+                    $scope.vistaSuscritos=true;
                     $scope.titulo = "BIENVENIDO " + $scope.registro.username;
                     $scope.console += "\nWS: RECIBIDO:" + obtenido;
                     var formulario = document.getElementById("divregistro");
@@ -94,6 +102,8 @@ app.controller("controlador", function($scope)
         $scope.titulo="INGRESA Y DISFRUTA";
         $scope.suscripciones= [];
         $scope.canales = [];
+        $scope.vercanal="";
+        $scope.verusuario="";
         var formulario = document.getElementById("divregistro");
         formulario.style.display="block";
     }
@@ -103,15 +113,27 @@ app.controller("controlador", function($scope)
         $scope.console="";
     }
     
+    $scope.ver= function(usuario,canal)
+    {
+        $scope.vercanal=canal;
+        $scope.verusuario=usuario;
+        alert("El usuario desea ver el canal del usuario "+usuario+" que está en el puerto "+canal);
+    }
+    
         
     escribirConsola = function (msj)
     {      
-            console.log(msj);
+            console.log(msj);            
             var consola =document.getElementById("consola");
-            consola.focus();
             consola.value+="\n"+msj;
-            
-            
+            var msj=consola.value;
+            //consola.focus();            
+            consola.focus();
+            consola.value="";
+            consola.value=msj;
+ 
+            // Movemos el scroll
+            consola.scrollHeight=msj.length;
   
     };
     
@@ -119,6 +141,35 @@ app.controller("controlador", function($scope)
     {
         return md5(pass);
     }
+    
+    $scope.administrar=function()
+    {
+        $scope.vistaAdministrar=true;  
+        $scope.vistaSuscritos=false;
+        $scope.vistaTodos=false;
+    };
+    
+    $scope.guardar=function()
+    {
+        $scope.vistaAdministrar=false;
+        $scope.vistaSuscritos=true;
+        $scope.vistaTodos=false; 
+        
+    };
+    
+    $scope.listarTodos=function()
+    {
+        $scope.vistaAdministrar=false;
+        $scope.vistaSuscritos=false;
+        $scope.vistaTodos=true; 
+    };
+    
+    $scope.listarSuscripciones=function()
+    {
+        $scope.vistaAdministrar=false;
+        $scope.vistaSuscritos=true;
+        $scope.vistaTodos=false; 
+    };
     
 })
 

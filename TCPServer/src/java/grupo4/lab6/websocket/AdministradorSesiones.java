@@ -4,7 +4,6 @@ import grupo4.lab6.modelo.Usuario;
 import grupo4.lab6.persistence.PersistenceManager;
 import java.io.File;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -15,12 +14,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
-import javax.json.JsonArray;
-import javax.json.JsonObject;
+
+import javax.json.*;
 import javax.json.spi.JsonProvider;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 import javax.websocket.Session;
 /**
  *
@@ -34,10 +30,11 @@ public class AdministradorSesiones
     private static final List<Usuario> usuarios = Collections.synchronizedList(new LinkedList<Usuario>()); 
     private static final Set<Session> sesiones = Collections.synchronizedSet(new HashSet<Session>()); 
     
-    public final static String DIR_RAIZ_USUARIOS=".\\";
+    public final static String DIR_RAIZ_USUARIOS="/home/administrador/Escritorio/Videos_Usuarios";
     private final static int PUERTO_INICIAL=15000;
     private int puertoActual;
     private String canales;
+    private JsonArrayBuilder builderCanales = Json.createArrayBuilder();
     
     
     
@@ -51,7 +48,6 @@ public class AdministradorSesiones
     {
         //TODO Cargar el archivo serializado
         puertoActual=PUERTO_INICIAL;
-        canales = "[";
     }
         
     
@@ -137,8 +133,8 @@ public class AdministradorSesiones
         Usuario nuevo = new Usuario(login, password, puerto, directorioUsuario);        
         directorioUsuario.mkdirs();     
         //Añade a la lista de canales
-        JsonObject jsonActual=JsonProvider.provider().createObjectBuilder().add("usuario",login).add("puerto", puerto).build();
-        canales.concat(jsonActual.toString());
+        JsonObject jsonObjectActual = JsonProvider.provider().createObjectBuilder().add("usuario",login).add("puerto", puerto).build();
+        builderCanales.add(jsonObjectActual);
         //Agrega a la lista de usuarios
         usuarios.add(nuevo);        
         return nuevo;
@@ -157,7 +153,7 @@ public class AdministradorSesiones
         }
     }
     
-    public JsonObject crearRespuesta(boolean logueado, boolean error, String msj, String suscripcionesUsuario)
+    public JsonObject crearRespuesta(boolean logueado, boolean error, String msj, JsonArray suscripcionesUsuario)
     {
         JsonProvider provider = JsonProvider.provider();
         JsonObject respuesta;
@@ -185,9 +181,9 @@ public class AdministradorSesiones
         return respuesta;        
     }
     
-    public String darListaCanales()
+    public JsonArray darListaCanales()
     {
-        return canales+"]";
+        return builderCanales.build();
     }
 
    
