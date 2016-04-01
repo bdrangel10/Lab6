@@ -1,18 +1,10 @@
 package grupo4.lab6.websocket;
 
 import grupo4.lab6.modelo.Usuario;
-import grupo4.lab6.persistence.PersistenceManager;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.io.*;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 
 import javax.json.*;
@@ -25,8 +17,9 @@ import javax.websocket.Session;
 
 
 @ApplicationScoped
-public class AdministradorSesiones 
+public class AdministradorUsuarios 
 {
+    private static AdministradorUsuarios instancia;
     private static final List<Usuario> usuarios = Collections.synchronizedList(new LinkedList<Usuario>()); 
     private static final Set<Session> sesiones = Collections.synchronizedSet(new HashSet<Session>()); 
     
@@ -36,6 +29,19 @@ public class AdministradorSesiones
     private String canales;
     private JsonArrayBuilder builderCanales = Json.createArrayBuilder();
     
+    public static AdministradorUsuarios darInstancia()
+    {
+        if(instancia==null)
+        {
+            instancia=new AdministradorUsuarios();
+        }
+        return instancia;            
+    }
+    
+    public void guardarEstado()
+    {
+        
+    }
     
     
     public synchronized int darNuevoPuerto()
@@ -44,43 +50,11 @@ public class AdministradorSesiones
         return puertoActual;
     }
     
-    public AdministradorSesiones()
+    public AdministradorUsuarios()
     {
         //TODO Cargar el archivo serializado
         puertoActual=PUERTO_INICIAL;
     }
-        
-    
-    /*
-    @PersistenceContext(unitName = "UsuariosPU")
-    EntityManager entityManager; 
-    
-    @PostConstruct
-    public void init() {
-        try {
-            entityManager = PersistenceManager.getInstance().getEntityManagerFactory().createEntityManager();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    } 
-    
-    public void inicializarDB()
-    {
-        if (entityManager == null) 
-        {
-            try 
-            {
-                entityManager = PersistenceManager.getInstance().getEntityManagerFactory().createEntityManager();
-            } 
-            catch (Exception e) 
-            {
-                e.printStackTrace();
-            }
-        }
-        
-    }   
-    */
-    
     
     public void addSession(Session session) 
     {
@@ -149,7 +123,7 @@ public class AdministradorSesiones
         catch (IOException ex) 
         {
             sesiones.remove(session);
-            Logger.getLogger(AdministradorSesiones.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AdministradorUsuarios.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     

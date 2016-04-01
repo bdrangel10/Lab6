@@ -32,13 +32,15 @@ import javax.json.JsonReader;
 public class AutenticacionSocketServer {
 
     @Inject
-    private AdministradorSesiones administradorSesiones;
+    private AdministradorUsuarios administradorSesiones;
     
     @PostConstruct
     public void inicializar()
     {
-        administradorSesiones=new AdministradorSesiones();
+        administradorSesiones= AdministradorUsuarios.darInstancia();
     }
+    
+    
 
     @OnOpen
     public void open(Session session) 
