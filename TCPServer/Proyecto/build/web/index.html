@@ -13,15 +13,17 @@
         <link rel="stylesheet" href="css/style.css">       
     </head>
     <body ng-controller="controlador">
-        <textarea class="estilotextarea4" style="width: 100%; height: 50px" id="consola">{{console}}</textarea>
+        <input type="text" class="estilotextarea4" style="width: 100%;height: 16px; font-style: italic "  value="{{console1}}">
+        <input type="text" class="estilotextarea4" style="width: 100%;height: 16px; font-style: italic"  value="{{console2}}">
+        <input type="text" class="estilotextarea4" style="width: 100%;height: 16px; font-style: italic "  value="{{console3}}">
         <div class="pen-title">
-            <h1 style="font: bold">{{titulo}}</h1><span>STREAMING de Video del GRUPO4  <a ng-click="salir()" ng-if="resultado.logueado">(x)Cerrar sesión</a></span>
+            <h1 style="font: bold; text-transform: uppercase;">{{titulo}}</h1><span>STREAMING de Video del GRUPO4  <a ng-click="salir()" ng-if="resultado.logueado">(x)Cerrar sesión</a></span>
         </div>
 
 
         <div class="container">
             <div class="card" ng-if="!resultado.logueado"></div>
-            <div class="card" ng-if="!resultado.logueado">
+            <div class="card" ng-if="!resultado.logueado" id="div_login">
                 <h1 class="title">INGRESO</h1>
                 <form autocomplete="off">
                     <div class="input-container">
@@ -34,10 +36,11 @@
                         <label for="Password">Password</label>
                         <div class="bar"></div>
                     </div>
+                    <div class="title" ng-if="resultado.error"><h1 style="color: red; font-size: 18px">{{resultado.msj}}</h1></div>
                     <div class="button-container">
                         <button ng-click="entrar()"><span>Entrar</span></button>
                     </div>
-                    <div class="title" ng-if="resultado.error"><h1 style="color: red; font-size: 18px">{{resultado.msj}}</h1></div>
+                    
 
                 </form>
             </div>
@@ -56,17 +59,18 @@
                     <div class="input-container">
                         <input type="password" id="Password" required="required" ng-model="registro.password"/>
                         <label for="Password">Password</label>
-                        <div class="bar"></div>Mucha
+                        <div class="bar"></div>
                     </div>
                     <div class="input-container">
                         <input type="password" id="Repeat Password" required="required" ng-model="registro.password1"/>
                         <label>Repeat Password</label>
                         <div class="bar"></div>
                     </div>
-                    <div class="title" ng-if="resultado.error"><h1 style="color: yellow; font-size: 18px">{{resultado.msj}}</h1></div>
-                    <div class="title" ng-if="registro.password != registro.password1" style="text-align: center"><h1 style="color: yellow; font-size: 18px">Las contraseñas deben coincidir</h1></div>                    
+                    <div class="title" ng-if="resultado.error"><h1 style="color: yellow; font-size: 18px">{{resultado.msj1}}</h1></div>
+                    <div class="title" ng-if="registro.password != registro.password1"><h1 style="color: yellow; font-size: 18px">Las contraseñas deben coincidir</h1></div>                    
+                    <div class="title" ng-if="registro.username==''"><h1 style="color: yellow; font-size: 18px">Escriba un nombre de usuario</h1></div>                    
                     <div class="button-container">
-                        <button ng-if="registro.password == registro.password1" ng-click="registrar()"><span>Registrarse</span></button>
+                        <button ng-if="registro.password == registro.password1 && registro.username!=''" ng-click="registrar()"><span>Registrarse</span></button>
                     </div>
 
                 </form>
@@ -76,7 +80,7 @@
             <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaSuscritos">
                 <tr>
                     <th ng-click="listarSuscripciones()" style="font-weight: 900">
-                        <img src="icons/cogwheel.png"  ng-click="administrar()" ng-if="!vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/>
+                        <img src="icons/configurar.png"  ng-click="administrar()" ng-if="!vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/>
                         <strong>Mis suscripciones</strong>
                     </th>
                     <th ng-click="listarTodos()" id="tit_todos">
@@ -85,8 +89,8 @@
                 </tr>
                 <tr ng-repeat="canal in suscripciones" ng-if="canal.usuario != registro.username">
                     <td data-th="Usuario">
-                        <img ng-click="ver(canal.usuario, canal.puerto)" src="icons/shapes.png"/>
-                        {{canal.usuario}}
+                        <img ng-click="ver(canal.usuario, canal.puerto)" src="icons/ojo.png"/>
+                        canal de {{canal.usuario}}
                     </td>  
                     <td></td>
                 </tr>                        
@@ -99,8 +103,8 @@
                 </tr>
                 <tr ng-repeat="canal in canales" ng-if="canal.usuario != registro.username">
                     <td data-th="Usuario">
-                        <img ng-if="!isFavorito(canal.usuario)" src="icons/social.png" ng-click="agregarFavorito(canal.usuario)"/>
-                        <img ng-if="isFavorito(canal.usuario)" src="icons/delete-2.png" ng-click="eliminarFavorito(canal.usuario)"/>
+                        <img style="cursor: pointer; height: 24px; width: 24px;" ng-if="!isFavorito(canal.usuario)" src="icons/medical.png" ng-click="agregarFavorito(canal.usuario)" />
+                        <img style="cursor: pointer; height: 24px; width: 24px;"  ng-if="isFavorito(canal.usuario)" src="icons/hearts.png" ng-click="eliminarFavorito(canal.usuario)"/>
                         Canal de {{canal.usuario}}
                     </td>                         
                     <td></td>
@@ -112,17 +116,17 @@
             <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaTodos">
                 <tr>
                     <th ng-click="listarSuscripciones()">
-                        <img src="icons/cogwheel.png"  ng-click="administrar()" ng-if="!vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/>
-                        Mis suscripciones
+                        <a style="cursor: pointer"><img src="icons/configurar.png"  ng-click="administrar()" ng-if="!vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/></a>
+                        <a style="cursor: pointer">Mis suscripciones</a>                            
                     </th>
                     <th ng-click="listarTodos()"  style="font-weight: 900">
-                        <strong>Todos los canales</strong>
+                        <strong style="cursor: pointer">Todos los canales</strong>
                     </th>
                 </tr>
                 <tr ng-repeat="canal in canales" ng-if="canal.usuario != registro.username">
                     <td data-th="Usuario">
-                        <img  src="icons/avatar.png"/>
-                        {{canal.usuario}}
+                        <img  src="icons/avatar.png" style="cursor: pointer;"/>
+                        usuario {{canal.usuario}}
                     </td>  
                     <td></td>
                 </tr>                        

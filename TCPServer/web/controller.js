@@ -5,7 +5,9 @@ app.controller("controlador", function($scope)
     $scope.titulo="INGRESA Y DISFRUTA";
     $scope.resultado={"error":false, "logueado":false, "msj":""};
     $scope.registro={"username":"", "password":"", "password1":"","accion":""};
-    $scope.console = "";
+    $scope.console2 = "";
+    $scope.console3 = "";
+    $scope.console1 = "";
     $scope.suscripciones = [];
     $scope.canales = [];
     $scope.vercanal = "";
@@ -40,8 +42,9 @@ app.controller("controlador", function($scope)
                 if ($scope.resultado.logueado)
                 {
                     $scope.vistaSuscritos=true;
+                    $scope.vistaTodos=false;
+                    $scope.vistaAdministrar=false;
                     $scope.titulo = "BIENVENIDO " + $scope.registro.username;
-                    $scope.console += "\nWS: RECIBIDO:" + obtenido;
                     $scope.suscripciones=$scope.resultado.suscripciones;
                     $scope.canales=$scope.resultado.canales;
                     var formulario = document.getElementById("divregistro");
@@ -63,10 +66,10 @@ app.controller("controlador", function($scope)
         {
             $scope.$apply(function () 
             {
-                $scope.console+="\nWS: Creado en "+rutaServer;
+                escribirConsola("\nWS: Creado en "+rutaServer);
                 //$scope.registro.password=md5($scope.registro.password);
                 socket.send(JSON.stringify($scope.registro))
-                $scope.console+="\nWS: ENVIADO: "+JSON.stringify($scope.registro);
+                escribirConsola("\nWS: ENVIADO: "+JSON.stringify($scope.registro));
             });
             
         };
@@ -76,11 +79,14 @@ app.controller("controlador", function($scope)
             $scope.$apply(function () {
                 escribirConsola("WS: RECIBIDO: " + obtenido);
                 $scope.resultado = JSON.parse(obtenido);
+                $scope.resultado.msj1=$scope.resultado.msj;
+                $scope.resultado.msj="";
                 if ($scope.resultado.logueado)
                 {
                     $scope.vistaSuscritos=true;
+                    $scope.vistaTodos=false;
+                    $scope.vistaAdministrar=false;
                     $scope.titulo = "BIENVENIDO " + $scope.registro.username;
-                    $scope.console += "\nWS: RECIBIDO:" + obtenido;
                     $scope.suscripciones=$scope.resultado.suscripciones;
                     $scope.canales=$scope.resultado.canales;
                     var formulario = document.getElementById("divregistro");
@@ -98,15 +104,24 @@ app.controller("controlador", function($scope)
     {
         //Registro socket
         $scope.resultado.logueado=false;
+        $scope.resultado.error=false;
+        $scope.resultado.msj="";
+        $scope.resultado.canales=[];
+        
         $scope.registro.password="";
         $scope.registro.password1="";
+        $scope.registro.username="";
+        $scope.registro.accion="";
+                
         $scope.titulo="INGRESA Y DISFRUTA";
         $scope.suscripciones= [];
         $scope.canales = [];
         $scope.vercanal = "";
         $scope.verusuario = "";
+        
         var formulario = document.getElementById("divregistro");
-        formulario.style.display = "block";
+        formulario.style.display = "inline";
+        document.getElementById("div_login").style.display="inline-block";
 
         $scope.vistaSuscritos = false;
         $scope.vistaAdministrar = false;
@@ -115,10 +130,6 @@ app.controller("controlador", function($scope)
         
     }
     
-    $scope.limpiarConsola=function()
-    {
-        $scope.console="";
-    }
     
     $scope.ver= function(usuario,canal)
     {
@@ -131,16 +142,9 @@ app.controller("controlador", function($scope)
     escribirConsola = function (msj)
     {      
             console.log(msj);            
-            var consola =document.getElementById("consola");
-            consola.value+="\n"+msj;
-            var msj=consola.value;
-            //consola.focus();            
-            consola.focus();
-            consola.value="";
-            consola.value=msj;
- 
-            // Movemos el scroll
-            consola.scrollHeight=msj.length;
+            $scope.console1=$scope.console2;
+            $scope.console2=$scope.console3;
+            $scope.console3=msj;
   
     };
     
@@ -161,6 +165,43 @@ app.controller("controlador", function($scope)
         $scope.vistaAdministrar=false;
         $scope.vistaSuscritos=true;
         $scope.vistaTodos=false; 
+        
+        $scope.registro.accion="guardar";
+        $scope.registro.password="";
+        var socket = new WebSocket(rutaServer);
+        socket.onopen = function ()
+        {
+            $scope.$apply(function () 
+            {
+                $scope.registro.suscripciones=$scope.suscripciones;
+                escribirConsola("\nWS: Creado en "+rutaServer);
+                socket.send(JSON.stringify($scope.registro));
+                escribirConsola("\nWS: ENVIADO: "+JSON.stringify($scope.registro));
+            });
+            
+        };
+        socket.onmessage = function(event)
+        {
+            var obtenido = event.data;
+            $scope.$apply(function () {
+                escribirConsola("WS: RECIBIDO: " + obtenido);
+                $scope.resultado = JSON.parse(obtenido);
+                $scope.resultado.msj1=$scope.resultado.msj;
+                $scope.resultado.msj="";
+                if ($scope.resultado.logueado)
+                {
+                    $scope.vistaSuscritos=true;
+                    $scope.vistaTodos=false;
+                    $scope.vistaAdministrar=false;
+                    $scope.titulo = "BIENVENIDO " + $scope.registro.username;
+                    $scope.suscripciones=$scope.resultado.suscripciones;
+                    $scope.canales=$scope.resultado.canales;
+                }
+                $scope.registro.password = "";
+                $scope.registro.password1 = "";
+            });
+
+        };
         
     };
     
@@ -191,7 +232,6 @@ app.controller("controlador", function($scope)
             }
         }
         $scope.suscripciones.splice(-1, 0, agregar);
-        console.log($scope.suscripciones);
 
     }
     

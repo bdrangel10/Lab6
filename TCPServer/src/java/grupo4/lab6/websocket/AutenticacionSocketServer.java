@@ -124,6 +124,27 @@ public class AutenticacionSocketServer {
                     respuesta = administradorSesiones.crearRespuesta(false, true, "El usuario ya está registrado",null);
                 }
             }
+            else if ("guardar".equals(jsonMessage.getString("accion"))) 
+            {
+                System.out.println("ACTUALIZAR PREFERENCIAS");
+                Usuario encontrado = administradorSesiones.buscarUsuario(usuario);
+                if(encontrado!=null)
+                {
+                    encontrado.actualizarSuscripciones(jsonMessage.getJsonArray("suscripciones"));
+                    System.out.println(encontrado.darSuscripciones());
+                    respuesta = administradorSesiones.crearRespuesta(true, false, "Suscripciones de "+usuario +" actualizadas exitosamente", encontrado.darSuscripciones());
+                }
+                else
+                {
+                    //Usuario ya existe
+                    respuesta = administradorSesiones.crearRespuesta(false, true, "No se encontró al usuario "+usuario,null);
+                }
+            }
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+            respuesta = administradorSesiones.crearRespuesta(false, true, "ERROR: "+e.getMessage(),null);
         }
         administradorSesiones.enviarMsjSesion(session, respuesta);
         System.out.println("WS: ENVIADO: "+respuesta.toString());
