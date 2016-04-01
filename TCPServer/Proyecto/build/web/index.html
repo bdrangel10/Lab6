@@ -83,11 +83,12 @@
                         Todos los canales
                     </th>
                 </tr>
-                <tr ng-repeat="canal in canales" ng-if="canal.usuario != registro.username">
+                <tr ng-repeat="canal in suscripciones" ng-if="canal.usuario != registro.username">
                     <td data-th="Usuario">
                         <img ng-click="ver(canal.usuario, canal.puerto)" src="icons/shapes.png"/>
                         {{canal.usuario}}
-                    </td>    
+                    </td>  
+                    <td></td>
                 </tr>                        
             </table>
 
@@ -97,9 +98,14 @@
                     <th><img src="icons/guardar.png"  ng-click="guardar()" ng-if="vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/></th>
                 </tr>
                 <tr ng-repeat="canal in canales" ng-if="canal.usuario != registro.username">
-                    <td data-th="Usuario">{{canal.usuario}}</td>
-                    <td data-th="visualizar" ng-click="ver(canal.usuario, canal.puerto)"><img src="icons/shapes.png"/></td>                            
-                </tr>                        
+                    <td data-th="Usuario">
+                        <img ng-if="!isFavorito(canal.usuario)" src="icons/social.png" ng-click="agregarFavorito(canal.usuario)"/>
+                        <img ng-if="isFavorito(canal.usuario)" src="icons/delete-2.png" ng-click="eliminarFavorito(canal.usuario)"/>
+                        Canal de {{canal.usuario}}
+                    </td>                         
+                    <td></td>
+                </tr>  
+
             </table>
 
             <!--TODOS-->
@@ -115,9 +121,10 @@
                 </tr>
                 <tr ng-repeat="canal in canales" ng-if="canal.usuario != registro.username">
                     <td data-th="Usuario">
-                        <img ng-click="ver(canal.usuario, canal.puerto)" src="icons/shapes.png"/>
+                        <img  src="icons/avatar.png"/>
                         {{canal.usuario}}
-                    </td>    
+                    </td>  
+                    <td></td>
                 </tr>                        
             </table>
 

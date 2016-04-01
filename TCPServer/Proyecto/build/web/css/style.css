@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img{
+    vertical-align: middle;
+}
+
 /* Pen Title */
 .pen-title {
   padding: 50px 0;

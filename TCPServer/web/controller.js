@@ -73,17 +73,18 @@ app.controller("controlador", function($scope)
         socket.onmessage = function(event)
         {
             var obtenido = event.data;
-            console.log("WS: RECIBIDO: " + obtenido);
             $scope.$apply(function () {
+                escribirConsola("WS: RECIBIDO: " + obtenido);
                 $scope.resultado = JSON.parse(obtenido);
                 if ($scope.resultado.logueado)
                 {
                     $scope.vistaSuscritos=true;
                     $scope.titulo = "BIENVENIDO " + $scope.registro.username;
                     $scope.console += "\nWS: RECIBIDO:" + obtenido;
+                    $scope.suscripciones=$scope.resultado.suscripciones;
+                    $scope.canales=$scope.resultado.canales;
                     var formulario = document.getElementById("divregistro");
                     formulario.style.display="none";
-
                 }
                 $scope.registro.password = "";
                 $scope.registro.password1 = "";
@@ -102,10 +103,16 @@ app.controller("controlador", function($scope)
         $scope.titulo="INGRESA Y DISFRUTA";
         $scope.suscripciones= [];
         $scope.canales = [];
-        $scope.vercanal="";
-        $scope.verusuario="";
+        $scope.vercanal = "";
+        $scope.verusuario = "";
         var formulario = document.getElementById("divregistro");
-        formulario.style.display="block";
+        formulario.style.display = "block";
+
+        $scope.vistaSuscritos = false;
+        $scope.vistaAdministrar = false;
+        $scope.vistaTodos = false;
+        
+        
     }
     
     $scope.limpiarConsola=function()
@@ -170,6 +177,50 @@ app.controller("controlador", function($scope)
         $scope.vistaSuscritos=true;
         $scope.vistaTodos=false; 
     };
+    
+    $scope.agregarFavorito=function(nombreCanal)
+    {
+        var agregar;
+        for (var i = 0; i < $scope.canales.length; i++)
+        {
+            actual = $scope.canales[i];
+            if (actual.usuario == nombreCanal)
+            {
+                agregar = actual;
+                break;
+            }
+        }
+        $scope.suscripciones.splice(-1, 0, agregar);
+        console.log($scope.suscripciones);
+
+    }
+    
+    $scope.eliminarFavorito= function (nombreCanal)
+    {
+        
+            for (var i = 0; i < $scope.suscripciones.length; i++)
+            {
+                if ($scope.suscripciones[i].usuario == nombreCanal)
+                {
+                    $scope.suscripciones.splice(i, 1);
+                    return;
+                }
+            }
+        
+    }
+    
+    $scope.isFavorito=function(nombreCanal)
+    {
+        for(var i=0;i< $scope.suscripciones.length; i++)
+        {
+            actual=$scope.suscripciones[i];
+            if(actual.usuario==nombreCanal)
+            {
+                return true;
+            }
+        }
+        return false;        
+    }
     
 })
 
