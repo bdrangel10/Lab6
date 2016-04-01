@@ -37,7 +37,8 @@
                         <div class="bar"></div>
                     </div>
                     <div class="title" ng-if="resultado.error"><h1 style="color: red; font-size: 18px">{{resultado.msj}}</h1></div>
-                    <div class="button-container">
+                    <div class="title" ng-if="registro.username==''"><h1 style="color: red; font-size: 18px">ingresa tu usuario</h1></div>
+                    <div class="button-container"  ng-if="registro.username!=''">
                         <button ng-click="entrar()"><span>Entrar</span></button>
                     </div>
                     
