@@ -23,7 +23,7 @@ public class AdministradorUsuarios implements Serializable
     private static final long serialVersionUID = 1L;
     private static AdministradorUsuarios instancia=null;
     private static List<Usuario> usuarios ;
-    private static Set<Session> sesiones;
+    private static Set<Session> sesiones= Collections.synchronizedSet(new HashSet<Session>());
     
     public final static String DIR_RAIZ_USUARIOS="/home/administrador/Escritorio/Videos_Usuarios";
     private final static int PUERTO_INICIAL=15000;
@@ -48,7 +48,6 @@ public class AdministradorUsuarios implements Serializable
                 ObjectInputStream ois = new ObjectInputStream( new FileInputStream( archivo ) );
                 puertoActual= (int)ois.readObject();
                 usuarios=(List<Usuario>) ois.readObject();
-                sesiones = (Set<Session>) ois.readObject();
                 ois.close();
                 builderCanales=Json.createArrayBuilder();
                 for (Usuario u : usuarios) {
@@ -56,9 +55,10 @@ public class AdministradorUsuarios implements Serializable
                     int puerto=u.getPuerto();
                     JsonObject jsonObjectActual = JsonProvider.provider().createObjectBuilder().add("usuario", login).add("puerto", puerto).build();
                     builderCanales.add(jsonObjectActual);
+                    System.out.println(login+"-"+u.esPassCorrecto(login));
                 }
                 System.out.println("Usuarios recuperados desde la persistencia "+usuarios.size()+"-"+darListaCanales().size());
-                
+                recuperado=true;
             }
             catch( Exception e )
             {
@@ -71,7 +71,7 @@ public class AdministradorUsuarios implements Serializable
         {
             puertoActual=PUERTO_INICIAL;
             usuarios = Collections.synchronizedList(new LinkedList<Usuario>()); 
-            sesiones = Collections.synchronizedSet(new HashSet<Session>());
+        
             builderCanales=Json.createArrayBuilder();
             System.out.println("INSTANCIA CREADA DESDE CERO");
         }
@@ -101,7 +101,6 @@ public class AdministradorUsuarios implements Serializable
             ObjectOutputStream oos = new ObjectOutputStream( new FileOutputStream( new File(DIR_RAIZ_USUARIOS,"persistencia.ddr") ) );
             oos.writeObject( puertoActual );
             oos.writeObject( usuarios );
-            oos.writeObject( sesiones );
             oos.close( );
             System.out.println("Usuarios actualmente:"+usuarios.size());
             System.out.println("Guardado exitosamente");
