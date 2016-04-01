@@ -17,17 +17,71 @@ import javax.websocket.Session;
 
 
 @ApplicationScoped
-public class AdministradorUsuarios 
+public class AdministradorUsuarios implements Serializable
 {
+    private static final long serialVersionUID = 1L;
     private static AdministradorUsuarios instancia;
-    private static final List<Usuario> usuarios = Collections.synchronizedList(new LinkedList<Usuario>()); 
-    private static final Set<Session> sesiones = Collections.synchronizedSet(new HashSet<Session>()); 
+    private static List<Usuario> usuarios ;
+    private static Set<Session> sesiones;
     
     public final static String DIR_RAIZ_USUARIOS="/home/administrador/Escritorio/Videos_Usuarios";
     private final static int PUERTO_INICIAL=15000;
     private int puertoActual;
-    private String canales;
-    private JsonArrayBuilder builderCanales = Json.createArrayBuilder();
+    private JsonArrayBuilder builderCanales ;
+    private String jsonCanales;
+
+    public AdministradorUsuarios() 
+    {
+        boolean recuperado=false;
+        File archivo = new File( DIR_RAIZ_USUARIOS+"/persistencia.ddr" );
+        if( archivo.exists( ) )
+        {
+            
+            try
+            {
+                ObjectInputStream ois = new ObjectInputStream( new FileInputStream( archivo ) );
+                puertoActual= (int)ois.readObject();
+                usuarios=(List<Usuario>) ois.readObject();
+                sesiones = (Set<Session>) ois.readObject();
+                JsonArray arrayJson = (JsonArray) ois.readObject();
+                //jsonCanales = (String) ois.readObject();
+                ois.close();
+                /*
+                JsonReader jsonReader = Json.createReader(new StringReader(jsonCanales));
+                JsonArray todos = (JsonArray) jsonReader.readArray();
+                jsonReader.close();
+                builderCanales=Json.createArrayBuilder();
+                */
+                System.out.println("CANALES RECUPERADOS "+arrayJson.size());
+                for(JsonValue actual: arrayJson)
+                {
+                    System.out.println(actual.toString());
+                    builderCanales.add(actual);
+                }
+                recuperado=true;
+                System.out.println("*******INSTANCIA RECUPERADA*******");
+                System.out.println(darListaCanales().toString());
+                
+            }
+            catch( Exception e )
+            {
+                System.out.println("ERROR al recuperar los usuarios desde la persistencia******");
+                e.printStackTrace();
+                recuperado=false;
+            }
+        }
+        if(!recuperado)
+        {
+            puertoActual=PUERTO_INICIAL;
+            usuarios = Collections.synchronizedList(new LinkedList<Usuario>()); 
+            sesiones = Collections.synchronizedSet(new HashSet<Session>());
+            jsonCanales="";
+            builderCanales=Json.createArrayBuilder();
+            System.out.println("INSTANCIA CREADA DESDE CERO");
+        }
+    }
+    
+    
     
     public static AdministradorUsuarios darInstancia()
     {
@@ -41,6 +95,20 @@ public class AdministradorUsuarios
     public void guardarEstado()
     {
         
+        try
+        {
+            ObjectOutputStream oos = new ObjectOutputStream( new FileOutputStream( new File(DIR_RAIZ_USUARIOS,"persistencia.ddr") ) );
+            oos.writeObject( puertoActual );
+            oos.writeObject( usuarios );
+            oos.writeObject( sesiones );
+            oos.writeObject( darListaCanales() );
+            oos.close( );
+        }
+        catch( IOException e )
+        {
+            e.printStackTrace();
+        }
+        System.out.println("PERSISTIDO INFORMACIÓN DE USUARIOS EN EL SERVIDOR");
     }
     
     
@@ -49,12 +117,7 @@ public class AdministradorUsuarios
         puertoActual++;
         return puertoActual;
     }
-    
-    public AdministradorUsuarios()
-    {
-        //TODO Cargar el archivo serializado
-        puertoActual=PUERTO_INICIAL;
-    }
+   
     
     public void addSession(Session session) 
     {
@@ -76,22 +139,11 @@ public class AdministradorUsuarios
             }
         }
         return null;
-        /*
-        inicializarDB();
-        Query q = entityManager.createQuery("select u from Usuario u where u.login='"+login+"'");
-        List cuantos = q.getResultList();
-        return cuantos.size()!=0;
-        */
     }
     
     public boolean login(Usuario usuario, String password)
     {
         return usuario.esPassCorrecto(password);
-        /*
-        Query q = entityManager.createQuery("select u from Usuario u where u.login='"+login+"'");
-        Usuario encontrado = (Usuario)q.getSingleResult();
-        return encontrado.getPassword().equals(password);  
-        */
     }
 
     /**

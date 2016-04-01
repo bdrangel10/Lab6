@@ -70,8 +70,4 @@ public class Usuario implements Serializable
     {
         return suscripciones;
     }
-    
-    
-    
-    
 }

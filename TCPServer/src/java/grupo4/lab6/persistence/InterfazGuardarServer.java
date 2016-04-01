@@ -6,6 +6,7 @@
 package grupo4.lab6.persistence;
 
 import grupo4.lab6.websocket.AdministradorUsuarios;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -24,7 +25,11 @@ public class InterfazGuardarServer extends JFrame implements ActionListener
         btnGuardar.addActionListener(this);
         this.add(btnGuardar);
         this.setVisible(true);
+        this.setSize(new Dimension(250,70));
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
+    
+    
 
     
     public void actionPerformed(ActionEvent e) 
