@@ -31,13 +31,15 @@ import javax.json.JsonReader;
 @ServerEndpoint("/auth")
 public class AutenticacionSocketServer {
 
-    @Inject
+    
     private AdministradorUsuarios administradorSesiones;
     
     @PostConstruct
     public void inicializar()
     {
-        administradorSesiones= AdministradorUsuarios.darInstancia();
+       System.out.println("POSTCONSTRUCT darInstancia");
+       administradorSesiones= AdministradorUsuarios.darInstancia();
+        
     }
     
     
@@ -46,7 +48,6 @@ public class AutenticacionSocketServer {
     public void open(Session session) 
     {
         boolean is = null==administradorSesiones;
-        System.out.println("nulo? "+is);
         administradorSesiones.addSession(session);
         System.out.println("WS:Se abrió el socket con sesión:" +session);
     }
@@ -62,6 +63,7 @@ public class AutenticacionSocketServer {
     public void onError(Throwable error) 
     {
         System.out.println("ERROR: "+error.getMessage());
+        error.printStackTrace();
         Logger.getLogger(AutenticacionSocketServer.class.getName()).log(Level.SEVERE, null, error);
     }
 
@@ -100,11 +102,10 @@ public class AutenticacionSocketServer {
                 }
                 
             }
-            else if ("registrar".equals(jsonMessage.getString("accion"))) 
+            else 
             {
-                System.out.println("REGISTRAR");
-                boolean bol = administradorSesiones==null;
-                System.out.println("ADMIN SESIONES nulo? "+bol);
+                if ("registrar".equals(jsonMessage.getString("accion"))) 
+            {
                 Usuario encontrado = administradorSesiones.buscarUsuario(usuario);
                 if(encontrado==null)
                 {
@@ -128,12 +129,10 @@ public class AutenticacionSocketServer {
             }
             else if ("guardar".equals(jsonMessage.getString("accion"))) 
             {
-                System.out.println("ACTUALIZAR PREFERENCIAS");
                 Usuario encontrado = administradorSesiones.buscarUsuario(usuario);
                 if(encontrado!=null)
                 {
                     encontrado.actualizarSuscripciones(jsonMessage.getJsonArray("suscripciones"));
-                    System.out.println(encontrado.darSuscripciones());
                     respuesta = administradorSesiones.crearRespuesta(true, false, "Suscripciones de "+usuario +" actualizadas exitosamente", encontrado.darSuscripciones());
                 }
                 else
@@ -141,6 +140,8 @@ public class AutenticacionSocketServer {
                     //Usuario ya existe
                     respuesta = administradorSesiones.crearRespuesta(false, true, "No se encontró al usuario "+usuario,null);
                 }
+            }
+                administradorSesiones.guardarEstado();
             }
         }
         catch(Exception e)

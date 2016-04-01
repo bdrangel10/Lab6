@@ -5,6 +5,7 @@ import java.io.*;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 
 import javax.json.*;
@@ -20,7 +21,7 @@ import javax.websocket.Session;
 public class AdministradorUsuarios implements Serializable
 {
     private static final long serialVersionUID = 1L;
-    private static AdministradorUsuarios instancia;
+    private static AdministradorUsuarios instancia=null;
     private static List<Usuario> usuarios ;
     private static Set<Session> sesiones;
     
@@ -28,9 +29,14 @@ public class AdministradorUsuarios implements Serializable
     private final static int PUERTO_INICIAL=15000;
     private int puertoActual;
     private JsonArrayBuilder builderCanales ;
-    private String jsonCanales;
+    
+    public AdministradorUsuarios()
+    {
+        darInstancia();
+    }
+       
 
-    public AdministradorUsuarios() 
+    public AdministradorUsuarios(boolean n) 
     {
         boolean recuperado=false;
         File archivo = new File( DIR_RAIZ_USUARIOS+"/persistencia.ddr" );
@@ -43,29 +49,20 @@ public class AdministradorUsuarios implements Serializable
                 puertoActual= (int)ois.readObject();
                 usuarios=(List<Usuario>) ois.readObject();
                 sesiones = (Set<Session>) ois.readObject();
-                JsonArray arrayJson = (JsonArray) ois.readObject();
-                //jsonCanales = (String) ois.readObject();
                 ois.close();
-                /*
-                JsonReader jsonReader = Json.createReader(new StringReader(jsonCanales));
-                JsonArray todos = (JsonArray) jsonReader.readArray();
-                jsonReader.close();
                 builderCanales=Json.createArrayBuilder();
-                */
-                System.out.println("CANALES RECUPERADOS "+arrayJson.size());
-                for(JsonValue actual: arrayJson)
-                {
-                    System.out.println(actual.toString());
-                    builderCanales.add(actual);
+                for (Usuario u : usuarios) {
+                    String login=u.getLogin();
+                    int puerto=u.getPuerto();
+                    JsonObject jsonObjectActual = JsonProvider.provider().createObjectBuilder().add("usuario", login).add("puerto", puerto).build();
+                    builderCanales.add(jsonObjectActual);
                 }
-                recuperado=true;
-                System.out.println("*******INSTANCIA RECUPERADA*******");
-                System.out.println(darListaCanales().toString());
+                System.out.println("Usuarios recuperados desde la persistencia "+usuarios.size()+"-"+darListaCanales().size());
                 
             }
             catch( Exception e )
             {
-                System.out.println("ERROR al recuperar los usuarios desde la persistencia******");
+                System.out.println("EXCEPCIÓN AL RECUPERAR DE PERSISTENCIA");
                 e.printStackTrace();
                 recuperado=false;
             }
@@ -75,7 +72,6 @@ public class AdministradorUsuarios implements Serializable
             puertoActual=PUERTO_INICIAL;
             usuarios = Collections.synchronizedList(new LinkedList<Usuario>()); 
             sesiones = Collections.synchronizedSet(new HashSet<Session>());
-            jsonCanales="";
             builderCanales=Json.createArrayBuilder();
             System.out.println("INSTANCIA CREADA DESDE CERO");
         }
@@ -87,7 +83,7 @@ public class AdministradorUsuarios implements Serializable
     {
         if(instancia==null)
         {
-            instancia=new AdministradorUsuarios();
+            instancia=new AdministradorUsuarios(true);
         }
         return instancia;            
     }
@@ -97,18 +93,24 @@ public class AdministradorUsuarios implements Serializable
         
         try
         {
+            File existente = new File(DIR_RAIZ_USUARIOS,"persistencia.ddr");
+            if(existente.exists())
+            {
+                existente.delete();
+            }
             ObjectOutputStream oos = new ObjectOutputStream( new FileOutputStream( new File(DIR_RAIZ_USUARIOS,"persistencia.ddr") ) );
             oos.writeObject( puertoActual );
             oos.writeObject( usuarios );
             oos.writeObject( sesiones );
-            oos.writeObject( darListaCanales() );
             oos.close( );
+            System.out.println("Usuarios actualmente:"+usuarios.size());
+            System.out.println("Guardado exitosamente");
         }
         catch( IOException e )
         {
             e.printStackTrace();
         }
-        System.out.println("PERSISTIDO INFORMACIÓN DE USUARIOS EN EL SERVIDOR");
+        
     }
     
     
