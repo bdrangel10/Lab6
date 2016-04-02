@@ -2,6 +2,7 @@ var app=angular.module("TCP_Login",[])
 app.controller("controlador", function($scope)
 {
     var rutaServer="ws:/localhost:8080/TCPServer/auth";
+    var rutaVideos="ws:/localhost:8080/TCPServer/upload";
     $scope.titulo="INGRESA Y DISFRUTA";
     $scope.resultado={"error":false, "logueado":false, "msj":""};
     $scope.registro={"username":"", "password":"", "password1":"","accion":""};
@@ -52,6 +53,8 @@ app.controller("controlador", function($scope)
                 }
                 $scope.registro.password = "";
                 $scope.registro.password1 = "";
+                socket.close();
+                escribirConsola("WS: conexión se ha cerrado");
             });
 
         };
@@ -94,9 +97,37 @@ app.controller("controlador", function($scope)
                 }
                 $scope.registro.password = "";
                 $scope.registro.password1 = "";
+                socket.close();
+                escribirConsola("WS: conexión se ha cerrado");
             });
 
         };
+       
+    }
+    
+    $scope.subirvideo=function()
+    {
+        var socket = new WebSocket(rutaVideos);
+        socket.onopen = function ()
+        {
+            $scope.$apply(function () 
+            {
+                escribirConsola("\nWS: Creado en " + rutaServer + ", subiendo....");
+                //$scope.registro.password=md5($scope.registro.password);
+                var file = document.querySelector('input[type="file"]').files[0];
+                socket.send(file);
+                escribirConsola("\nWS: ENVIADO: "+JSON.stringify($scope.registro));
+            });            
+        };
+        socket.onmessage=function (event)        
+        {
+            var obtenido = event.data;
+            $scope.$apply(function () {
+                escribirConsola("WS: RECIBIDO: " + obtenido);
+                $scope.upload.result = JSON.parse(obtenido);
+            });
+            socket.close();
+        }
        
     }
     

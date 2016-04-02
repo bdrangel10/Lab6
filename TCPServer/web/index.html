@@ -78,24 +78,30 @@
             </div>
 
             <!--SUSCRIPCIONES-->
-            <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaSuscritos">
-                <tr>
-                    <th ng-click="listarSuscripciones()" style="font-weight: 900">
-                        <img src="icons/configurar.png"  ng-click="administrar()" ng-if="!vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/>
-                        <strong>Mis suscripciones</strong>
-                    </th>
-                    <th ng-click="listarTodos()" id="tit_todos">
-                        Todos los canales
-                    </th>
-                </tr>
-                <tr ng-repeat="canal in suscripciones" ng-if="canal.usuario != registro.username">
-                    <td data-th="Usuario">
-                        <img ng-click="ver(canal.usuario, canal.puerto)" src="icons/ojo.png"/>
-                        canal de {{canal.usuario}}
-                    </td>  
-                    <td></td>
-                </tr>                        
-            </table>
+            <div ng-if="resultado.logueado && vistaSuscritos">
+                <table class="rwd-table" style="width: 500px;">
+                    <tr>
+                        <th ng-click="listarSuscripciones()" style="font-weight: 900">
+                            <img src="icons/configurar.png"  ng-click="administrar()" ng-if="!vistaAdministrar" style="vertical-align: middle" id="imagen_opciones"/>
+                            <strong>Mis suscripciones</strong>
+                        </th>
+                        <th ng-click="listarTodos()" id="tit_todos">
+                            Todos los canales
+                        </th>
+                    </tr>
+                    <tr ng-repeat="canal in suscripciones" ng-if="canal.usuario != registro.username">
+                        <td data-th="Usuario">
+                            <a href="localhost:{{canal.puerto}}"><img ng-click="ver(canal.usuario, canal.puerto)" src="icons/ojo.png"/></a>
+                            canal de {{canal.usuario}}
+                        </td>  
+                        <td></td>
+                    </tr>                        
+                </table>
+                <form>
+                    <input type="file" id="myfile" name="myfile"/>
+                    <input type="button" ng-click="subirvideo()"/>
+                </form>
+            </div>
 
             <!--ADMINISTRAR-->
             <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaAdministrar">

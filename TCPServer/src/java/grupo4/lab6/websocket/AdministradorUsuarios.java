@@ -212,6 +212,11 @@ public class AdministradorUsuarios implements Serializable
     {
         return builderCanales.build();
     }
+    
+    public File darCarpetaRaiz()
+    {
+        return new File(DIR_RAIZ_USUARIOS);
+    }
 
    
     
