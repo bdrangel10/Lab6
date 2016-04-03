@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/administrador/Escritorio/Lab6/TCPServer/src/java/grupo4/lab6/websocket/ReceptorVideosSocket.java</file>
+            <file>file:/home/administrador/Escritorio/Lab6/TCPServer/web/index.html</file>
             <file>file:/home/administrador/Escritorio/Lab6/TCPServer/web/controller.js</file>
+            <file>file:/home/administrador/Escritorio/Lab6/TCPServer/web/css/style.css</file>
+            <file>file:/home/administrador/Escritorio/Lab6/TCPServer/src/java/grupo4/lab6/websocket/AdministradorUsuarios.java</file>
             <file>file:/home/administrador/Escritorio/Lab6/TCPServer/src/java/grupo4/lab6/websocket/AutenticacionSocketServer.java</file>
         </group>
     </open-files>
