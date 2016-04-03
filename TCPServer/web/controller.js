@@ -13,6 +13,7 @@ app.controller("controlador", function($scope)
     $scope.canales = [];
     $scope.vercanal = "";
     $scope.verusuario = "";
+    $scope.upload={"puerto":"","nombre":"nombre"};
     
     $scope.vistaSuscritos=false;
     $scope.vistaAdministrar=false;
@@ -50,6 +51,7 @@ app.controller("controlador", function($scope)
                     $scope.canales=$scope.resultado.canales;
                     var formulario = document.getElementById("divregistro");
                     formulario.style.display="none";
+                    $scope.upload.puerto=$scope.resultado.canal;
                 }
                 $scope.registro.password = "";
                 $scope.registro.password1 = "";
@@ -94,6 +96,7 @@ app.controller("controlador", function($scope)
                     $scope.canales=$scope.resultado.canales;
                     var formulario = document.getElementById("divregistro");
                     formulario.style.display="none";
+                    $scope.upload.puerto=$scope.resultado.canal;
                 }
                 $scope.registro.password = "";
                 $scope.registro.password1 = "";
@@ -107,16 +110,17 @@ app.controller("controlador", function($scope)
     
     $scope.subirvideo=function()
     {
+        enviado=false;
+        var file = document.querySelector('input[type="file"]').files[0];
+        $scope.upload.nombre=file.name;
         var socket = new WebSocket(rutaVideos);
         socket.onopen = function ()
         {
             $scope.$apply(function () 
             {
-                escribirConsola("\nWS: Creado en " + rutaServer + ", subiendo....");
-                //$scope.registro.password=md5($scope.registro.password);
-                var file = document.querySelector('input[type="file"]').files[0];
-                socket.send(file);
-                escribirConsola("\nWS: ENVIADO: "+JSON.stringify($scope.registro));
+                escribirConsola("\nWS: Creado en " + rutaServer);
+                socket.send(JSON.stringify($scope.upload));
+                escribirConsola("\nWS: ENVIADO: "+JSON.stringify($scope.upload));
             });            
         };
         socket.onmessage=function (event)        
@@ -124,9 +128,20 @@ app.controller("controlador", function($scope)
             var obtenido = event.data;
             $scope.$apply(function () {
                 escribirConsola("WS: RECIBIDO: " + obtenido);
-                $scope.upload.result = JSON.parse(obtenido);
+               if(!enviado) 
+               {
+                   socket.send(file);
+                   enviado=true;
+               }
+               else
+               {
+                   $scope.upload.result=JSON.parse(obtenido);
+                   socket.close();
+                   escribirConsola("WS: Socket para subida de videos cerrado");
+               }
+                
             });
-            socket.close();
+            
         }
        
     }

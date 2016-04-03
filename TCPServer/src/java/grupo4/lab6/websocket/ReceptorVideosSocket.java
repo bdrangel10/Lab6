@@ -14,6 +14,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.StringReader;
 import java.math.BigDecimal;
+import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,7 +40,11 @@ import javax.json.spi.JsonProvider;
  */
 @ApplicationScoped
 @ServerEndpoint("/upload")
-public class ReceptorVideosSocket {
+public class ReceptorVideosSocket 
+{
+    
+    private String nombre_video;
+    private String puerto_carpeta;
 
     
     private AdministradorUsuarios administradorSesiones;
@@ -75,25 +80,39 @@ public class ReceptorVideosSocket {
         error.printStackTrace();
         Logger.getLogger(ReceptorVideosSocket.class.getName()).log(Level.SEVERE, null, error);
     }
+    @OnMessage
+    public void prepararCanal(String message, Session session)
+    {
+        String msj;
+        try (JsonReader reader = Json.createReader(new StringReader(message))) 
+        {
+            JsonObject jsonMessage = reader.readObject();
+            nombre_video=jsonMessage.getString("nombre");
+            puerto_carpeta=""+jsonMessage.getInt("puerto");
+            msj="Socket preparado para recibir el video "+nombre_video+ "que será transmitido en el puerto "+puerto_carpeta;
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+            msj="ERROR EN EL SOCKET: "+e.getMessage();
+        }
+        administradorSesiones.enviarMsjSesion(session, JsonProvider.provider().createObjectBuilder().add("msj", msj).build());           
+        
+        
+    }
 
     @OnMessage
-    public void handleMessage(File video, Session session) 
+    public void handleMessage(ByteBuffer video, Session session) 
     {
-        System.out.println("SE RECIBIÓ UN ARCHIVO FILE");
+        System.out.println("Video recibido");
         File carpeta = administradorSesiones.darCarpetaRaiz();
-        try {
-            InputStream in = new FileInputStream(video);
-            OutputStream out = new FileOutputStream(new File(carpeta.getAbsolutePath(),video.getName()));
-
-            byte[] buf = new byte[1024];
-            int len;
-
-            while ((len = in.read(buf)) > 0) {
-                out.write(buf, 0, len);
-            }
-
-            in.close();
-            out.close();
+        try 
+        {
+            
+            OutputStream out = new FileOutputStream(new File(carpeta.getAbsolutePath()+"/"+puerto_carpeta, nombre_video));
+            byte[] buf = video.array();
+	    out.write(buf);
+	    out.close();
 
         } catch (Exception e) 
         {

@@ -97,11 +97,14 @@
                         <td></td>
                     </tr>                        
                 </table>
-                <form>
-                    <input type="file" id="myfile" name="myfile"/>
-                    <input type="button" ng-click="subirvideo()"/>
-                </form>
+                
             </div>
+
+            <form>
+                <input type="file" id="myfile" name="myfile"/>
+                <input type="button" ng-click="subirvideo()"/>
+                aaa{{scope.canal}}
+            </form>
 
             <!--ADMINISTRAR-->
             <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaAdministrar">

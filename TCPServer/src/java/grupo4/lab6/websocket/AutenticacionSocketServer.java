@@ -86,19 +86,19 @@ public class AutenticacionSocketServer {
                     if (encontrado.esPassCorrecto(contrasenia)) 
                     {
                         //Exitoso rta
-                        respuesta = administradorSesiones.crearRespuesta(true, false, "Ingreso exitoso para el usuario "+usuario, encontrado.darSuscripciones());
+                        respuesta = administradorSesiones.crearRespuesta(true, false, "Ingreso exitoso para el usuario "+usuario, encontrado.darSuscripciones(), encontrado.getPuerto());
                     }
                     else
                     {
                         //Contraseña incorrecta
-                        respuesta = administradorSesiones.crearRespuesta(false, true, "La contraseña es incorrecta",null);
+                        respuesta = administradorSesiones.crearRespuesta(false, true, "La contraseña es incorrecta",null,-1);
                         
                     }
                 }
                 else
                 {
                     //usuario no registrado
-                    respuesta = administradorSesiones.crearRespuesta(false, true, "Usuario no existe",null);
+                    respuesta = administradorSesiones.crearRespuesta(false, true, "Usuario no existe",null,-1);
                 }
                 
             }
@@ -113,18 +113,18 @@ public class AutenticacionSocketServer {
                     if(resultado!=null)
                     {
                         //Se registró
-                        respuesta = administradorSesiones.crearRespuesta(true, false, "Usuario "+usuario +" registrado exitosamente", resultado.darSuscripciones());
+                        respuesta = administradorSesiones.crearRespuesta(true, false, "Usuario "+usuario +" registrado exitosamente", resultado.darSuscripciones(), resultado.getPuerto());
                     }
                     else
                     {
                         //ERROR; ENVIAR RTA
-                        respuesta = administradorSesiones.crearRespuesta(false, true, "ERROR al intentar crear el usuario",null);
+                        respuesta = administradorSesiones.crearRespuesta(false, true, "ERROR al intentar crear el usuario",null,-1);
                     }
                 }
                 else
                 {
                     //Usuario ya existe
-                    respuesta = administradorSesiones.crearRespuesta(false, true, "El usuario ya está registrado",null);
+                    respuesta = administradorSesiones.crearRespuesta(false, true, "El usuario ya está registrado",null,-1);
                 }
             }
             else if ("guardar".equals(jsonMessage.getString("accion"))) 
@@ -133,12 +133,12 @@ public class AutenticacionSocketServer {
                 if(encontrado!=null)
                 {
                     encontrado.actualizarSuscripciones(jsonMessage.getJsonArray("suscripciones"));
-                    respuesta = administradorSesiones.crearRespuesta(true, false, "Suscripciones de "+usuario +" actualizadas exitosamente", encontrado.darSuscripciones());
+                    respuesta = administradorSesiones.crearRespuesta(true, false, "Suscripciones de "+usuario +" actualizadas exitosamente", encontrado.darSuscripciones(), encontrado.getPuerto());
                 }
                 else
                 {
                     //Usuario ya existe
-                    respuesta = administradorSesiones.crearRespuesta(false, true, "No se encontró al usuario "+usuario,null);
+                    respuesta = administradorSesiones.crearRespuesta(false, true, "No se encontró al usuario "+usuario,null,-1);
                 }
             }
                 administradorSesiones.guardarEstado();
@@ -147,7 +147,7 @@ public class AutenticacionSocketServer {
         catch(Exception e)
         {
             e.printStackTrace();
-            respuesta = administradorSesiones.crearRespuesta(false, true, "ERROR: "+e.getMessage(),null);
+            respuesta = administradorSesiones.crearRespuesta(false, true, "ERROR: "+e.getMessage(),null,-1);
         }
         administradorSesiones.enviarMsjSesion(session, respuesta);
         System.out.println("WS: ENVIADO: "+respuesta.toString());
