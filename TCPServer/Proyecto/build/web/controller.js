@@ -140,7 +140,8 @@ app.controller("controlador", function($scope)
                     {
                         socket.send(file);
                         enviado = true;
-                        document.getElementById("file_picker").value = "";
+                        file=undefined;
+                        document.querySelector('input[type="file"]').file=null;
                     } else
                     {
                         $scope.upload.result = JSON.parse(obtenido);

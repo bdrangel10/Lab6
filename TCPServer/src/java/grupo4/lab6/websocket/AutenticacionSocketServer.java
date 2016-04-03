@@ -33,6 +33,7 @@ public class AutenticacionSocketServer {
 
     
     private AdministradorUsuarios administradorSesiones;
+    private long inicioConexion;
     
     @PostConstruct
     public void inicializar()
@@ -47,7 +48,7 @@ public class AutenticacionSocketServer {
     @OnOpen
     public void open(Session session) 
     {
-        boolean is = null==administradorSesiones;
+        inicioConexion=System.currentTimeMillis();
         administradorSesiones.addSession(session);
         System.out.println("WS:Se abrió el socket con sesión:" +session);
     }
@@ -70,8 +71,11 @@ public class AutenticacionSocketServer {
     @OnMessage
     public void handleMessage(String message, Session session) 
     {
+        long inicioAtencion=System.currentTimeMillis();
+        int tiempoCola = (int) (inicioAtencion-inicioConexion);
         System.out.println("WS: RECIBIDO: "+message);
         JsonObject respuesta=null;
+        String tipoSol="registrar";
         try (JsonReader reader = Json.createReader(new StringReader(message))) 
         {
             JsonObject jsonMessage = reader.readObject();
@@ -80,6 +84,7 @@ public class AutenticacionSocketServer {
 
             if ("ingresar".equals(jsonMessage.getString("accion"))) 
             {
+                tipoSol="ingresar";
                 Usuario encontrado=administradorSesiones.buscarUsuario(usuario);
                 if (encontrado!=null) 
                 {
@@ -151,6 +156,9 @@ public class AutenticacionSocketServer {
         }
         administradorSesiones.enviarMsjSesion(session, respuesta);
         System.out.println("WS: ENVIADO: "+respuesta.toString());
+        long finAtencion = System.currentTimeMillis();
+        int tiempoAtencion = (int) (finAtencion-inicioAtencion);
+        administradorSesiones.registrarEstadísticas(session.getId(), tiempoCola, tiempoAtencion, tipoSol);
     }
 
 }

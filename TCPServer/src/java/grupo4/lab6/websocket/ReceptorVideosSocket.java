@@ -45,6 +45,8 @@ public class ReceptorVideosSocket
     
     private String nombre_video;
     private String puerto_carpeta;
+    private long inicioCola;
+    private long cola;
 
     
     private AdministradorUsuarios administradorSesiones;
@@ -52,9 +54,7 @@ public class ReceptorVideosSocket
     @PostConstruct
     public void inicializar()
     {
-       System.out.println("POSTCONSTRUCT darInstancia");
        administradorSesiones= AdministradorUsuarios.darInstancia();
-        
     }
     
     
@@ -62,6 +62,7 @@ public class ReceptorVideosSocket
     @OnOpen
     public void open(Session session) 
     {
+        inicioCola=System.currentTimeMillis();
         administradorSesiones.addSession(session);
         System.out.println("WS:Se abrió el socket con sesión:" +session);
     }
@@ -83,6 +84,7 @@ public class ReceptorVideosSocket
     @OnMessage
     public void prepararCanal(String message, Session session)
     {
+        cola=System.currentTimeMillis()-inicioCola;
         String msj;
         try (JsonReader reader = Json.createReader(new StringReader(message))) 
         {
@@ -104,6 +106,7 @@ public class ReceptorVideosSocket
     @OnMessage
     public void handleMessage(ByteBuffer video, Session session) 
     {
+        long inicioTransmision =System.currentTimeMillis();
         System.out.println("Video recibido");
         File carpeta = new File(administradorSesiones.darCarpetaRaiz().getAbsoluteFile()+"/"+puerto_carpeta);
         try 
@@ -127,7 +130,9 @@ public class ReceptorVideosSocket
             listado.add(archivosUsuario[i].getName());
         }
         respuesta.add("videos",listado);
-        administradorSesiones.enviarMsjSesion(session, respuesta.build());           
+        administradorSesiones.enviarMsjSesion(session, respuesta.build()); 
+        int transmision=(int)(System.currentTimeMillis()-inicioTransmision);
+        administradorSesiones.registrarEstadísticas(session.getId(), (int)cola, transmision, "subir video");
         
     }
 
