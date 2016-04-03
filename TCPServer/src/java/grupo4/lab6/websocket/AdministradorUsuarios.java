@@ -180,7 +180,7 @@ public class AdministradorUsuarios implements Serializable
         }
     }
     
-    public JsonObject crearRespuesta(boolean logueado, boolean error, String msj, JsonArray suscripcionesUsuario, int canal)
+    public JsonObject crearRespuesta(boolean logueado, boolean error, String msj, JsonArray suscripcionesUsuario, int canal, JsonArray listado)
     {
         JsonProvider provider = JsonProvider.provider();
         JsonObject respuesta;
@@ -202,6 +202,7 @@ public class AdministradorUsuarios implements Serializable
                     .add("canales", darListaCanales())
                     .add("suscripciones", suscripcionesUsuario)
                     .add("canal",canal)
+                    .add("videos",listado)
                     .build();
         }
 

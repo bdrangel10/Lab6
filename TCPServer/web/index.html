@@ -78,7 +78,11 @@
             </div>
 
             <!--SUSCRIPCIONES-->
-            <div ng-if="resultado.logueado && vistaSuscritos">
+            
+
+        </div>
+        
+        <div ng-if="resultado.logueado && vistaSuscritos">
                 <table class="rwd-table" style="width: 500px;">
                     <tr>
                         <th ng-click="listarSuscripciones()" style="font-weight: 900">
@@ -100,11 +104,7 @@
                 
             </div>
 
-            <form>
-                <input type="file" id="myfile" name="myfile"/>
-                <input type="button" ng-click="subirvideo()"/>
-                aaa{{scope.canal}}
-            </form>
+            
 
             <!--ADMINISTRAR-->
             <table class="rwd-table" style="width: 500px; " ng-if="resultado.logueado && vistaAdministrar">
@@ -141,8 +141,26 @@
                     <td></td>
                 </tr>                        
             </table>
-
-        </div>
+            
+            <!--Mi canal-->
+            <table class="rwd-table" style="width: 210px; left: 40px;" ng-if="resultado.logueado">
+                <tr style="height: 50px">
+                    <th>Mi canal</th>
+                </tr>
+                <tr ng-repeat="video in micanal">
+                    <td data-th="video">
+                        {{video}}
+                    </td>  
+                </tr>   
+                <tr>
+                    <td>
+                        <form>
+                            <input type="file" id="myfile" name="myfile"/>
+                            <input type="button" ng-click="subirvideo()" value="subir"/>
+                        </form>
+                    </td>
+                </tr>
+            </table>
 
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src="js/index.js"></script>

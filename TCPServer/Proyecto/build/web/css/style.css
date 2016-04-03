@@ -536,6 +536,13 @@ h1 {
   color: #34495E;
 }
 */
+table
+{
+    position: absolute;
+    top:170px;
+    left: 380px;
+}
+
 
 .rwd-table {
     background: #34495E;

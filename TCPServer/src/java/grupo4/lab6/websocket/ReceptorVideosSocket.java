@@ -105,11 +105,10 @@ public class ReceptorVideosSocket
     public void handleMessage(ByteBuffer video, Session session) 
     {
         System.out.println("Video recibido");
-        File carpeta = administradorSesiones.darCarpetaRaiz();
+        File carpeta = new File(administradorSesiones.darCarpetaRaiz().getAbsoluteFile()+"/"+puerto_carpeta);
         try 
         {
-            
-            OutputStream out = new FileOutputStream(new File(carpeta.getAbsolutePath()+"/"+puerto_carpeta, nombre_video));
+            OutputStream out = new FileOutputStream(new File(carpeta.getAbsolutePath(), nombre_video));
             byte[] buf = video.array();
 	    out.write(buf);
 	    out.close();

@@ -14,6 +14,7 @@ app.controller("controlador", function($scope)
     $scope.vercanal = "";
     $scope.verusuario = "";
     $scope.upload={"puerto":"","nombre":"nombre"};
+    $scope.micanal=[];
     
     $scope.vistaSuscritos=false;
     $scope.vistaAdministrar=false;
@@ -52,6 +53,7 @@ app.controller("controlador", function($scope)
                     var formulario = document.getElementById("divregistro");
                     formulario.style.display="none";
                     $scope.upload.puerto=$scope.resultado.canal;
+                    $scope.micanal=$scope.resultado.videos;
                 }
                 $scope.registro.password = "";
                 $scope.registro.password1 = "";
@@ -95,8 +97,9 @@ app.controller("controlador", function($scope)
                     $scope.suscripciones=$scope.resultado.suscripciones;
                     $scope.canales=$scope.resultado.canales;
                     var formulario = document.getElementById("divregistro");
-                    formulario.style.display="none";
-                    $scope.upload.puerto=$scope.resultado.canal;
+                    formulario.style.display = "none";
+                    $scope.upload.puerto = $scope.resultado.canal;
+                    $scope.micanal = $scope.resultado.videos;
                 }
                 $scope.registro.password = "";
                 $scope.registro.password1 = "";
@@ -126,18 +129,22 @@ app.controller("controlador", function($scope)
         socket.onmessage=function (event)        
         {
             var obtenido = event.data;
-            $scope.$apply(function () {
+            $scope.$apply(function () 
+            {
                 escribirConsola("WS: RECIBIDO: " + obtenido);
                if(!enviado) 
                {
                    socket.send(file);
                    enviado=true;
+                   file=null;
                }
                else
                {
                    $scope.upload.result=JSON.parse(obtenido);
                    socket.close();
                    escribirConsola("WS: Socket para subida de videos cerrado");
+                   $scope.micanal=$scope.upload.result.videos;
+                   $scope.msjUpload=$scope.upload.result.msj;
                }
                 
             });
@@ -153,6 +160,7 @@ app.controller("controlador", function($scope)
         $scope.resultado.error=false;
         $scope.resultado.msj="";
         $scope.resultado.canales=[];
+        $scope.micanal=[];
         
         $scope.registro.password="";
         $scope.registro.password1="";

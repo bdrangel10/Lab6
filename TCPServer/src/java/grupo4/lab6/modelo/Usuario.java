@@ -97,4 +97,15 @@ public class Usuario implements Serializable {
     {
         return suscripciones;
     }
+    
+    public JsonArray darVideosUsuario()
+    {
+        JsonArrayBuilder listado=JsonProvider.provider().createArrayBuilder();
+        File[] archivosUsuario = carpeta.listFiles();
+        for(int i=0; i<archivosUsuario.length;i++)
+        {
+            listado.add(archivosUsuario[i].getName());
+        }
+        return listado.build();
+    }
 }
