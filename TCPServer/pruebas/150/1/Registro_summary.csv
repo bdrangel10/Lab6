@@ -1,0 +1,3 @@
+sampler_label,aggregate_report_count,average,aggregate_report_min,aggregate_report_max,aggregate_report_stddev,aggregate_report_error%,aggregate_report_rate,aggregate_report_bandwidth,average_bytes
+Registrar usuarios,150,3461,1138,6736,1262.8067550060416,0.0,8.581726643400652,29.66930852737571,3540.24
+Total,150,3461,1138,6736,1262.8067550060416,0.0,8.581726643400652,29.66930852737571,3540.24

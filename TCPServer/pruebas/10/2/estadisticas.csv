@@ -1,0 +1,21 @@
+id usuario,tiempo en cola,tiempo de procesamiento,tiempo de solicitud
+7cf8bf5c-e8e9-436f-a568-6f0aeb60231e,23,22,registrar
+338cc46b-dd6c-4a7b-b28b-5fedd0e29624,1,15,registrar
+9969633d-b268-4d26-8379-790354dd7d52,23,8,registrar
+76ca4680-c075-403f-8e59-a94854a0cea9,32,17,registrar
+1d3a3d58-10ec-41af-be3e-7300913fe011,50,5,registrar
+361e0267-2851-4318-ab13-f565b350548f,56,10,registrar
+953869f2-aaff-47ee-90cc-3cb6f7cad2fc,1,5,registrar
+a1dace09-2edc-41e5-9b45-8c83e2c37d6e,1,18,registrar
+33c0afaa-eeb4-49b8-8863-094724cc5a3f,3,7,registrar
+19205f6f-c867-4e1f-b18d-b3101bb8c929,1,3,registrar
+62330c5e-cf66-4c0b-82b2-7078bb3a3f3a,5,13,ingresar
+7a69bb98-3a10-4370-ba50-d2dda54abad6,1,13,ingresar
+5cad3514-7aaa-4514-a2e3-e9caa4572e6d,2,1,ingresar
+778f0548-829b-4eb0-8ef7-63fcc10fd3ff,0,5,ingresar
+cf9b506b-abe6-4b6c-9c7d-8b3734f8491b,2,4,ingresar
+75dcbcec-7ed4-4f62-8cd9-6ea74474fd21,8,3,ingresar
+1110be3c-9e86-42a8-84b4-f0613c807ae9,4,5,ingresar
+54644ad2-8a67-499e-a91c-15ea3c7c6f6f,0,3,ingresar
+d2d54eb1-99e9-408c-87aa-e2d525c3f079,0,2,ingresar
+022453ed-7018-4c3e-b816-a9df9e314664,4,6,ingresar

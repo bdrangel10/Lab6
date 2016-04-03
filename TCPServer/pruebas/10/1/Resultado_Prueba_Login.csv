@@ -47673,3 +47673,3523 @@ MILLISECONDS
 
 [Problems]
 ",Registro usuarios  1-48,,true,2399,4,4,null,,0,UTF-8,1,0,administrador,0
+1459720156895,2277,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (1619 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-9,,true,1633,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720157328,2486,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (1980 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-13,,true,1994,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720158338,1897,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2024 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-2,,true,2038,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720157838,2181,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2295 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-12,,true,2309,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720157836,2193,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (1979 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-4,,true,1993,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720157326,2621,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (1980 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-11,,true,1994,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720158557,1750,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2250 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-22,,true,2264,63,63,null,,0,UTF-8,1,0,administrador,0
+1459720158650,1727,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2295 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-27,,true,2309,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720158670,1723,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2430 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-18,,true,2444,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720157832,2599,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2294 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-7,,true,2308,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720158182,2245,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (1890 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-14,,true,1904,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720158650,1813,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2429 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-1,,true,2443,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720158178,2281,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-17,,true,2489,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720158652,1806,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2430 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-25,,true,2444,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720158385,2098,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2339 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-3,,true,2353,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720158338,2463,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2340 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-33,,true,2354,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720158741,2340,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-26,,true,2489,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720157327,3754,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2294 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-8,,true,2308,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720158252,2846,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2249 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-6,,true,2263,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720158169,2929,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2295 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-19,,true,2309,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720158682,2422,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-16,,true,2489,52,52,null,,0,UTF-8,1,0,administrador,0
+1459720158194,2920,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-15,,true,2489,51,51,null,,0,UTF-8,1,0,administrador,0
+1459720158255,2859,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2385 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-30,,true,2399,51,51,null,,0,UTF-8,1,0,administrador,0
+1459720158653,2461,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2295 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-20,,true,2309,51,51,null,,0,UTF-8,1,0,administrador,0
+1459720157831,3499,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2295 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-10,,true,2309,52,52,null,,0,UTF-8,1,0,administrador,0
+1459720158391,3130,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2340 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-32,,true,2354,62,62,null,,0,UTF-8,1,0,administrador,0
+1459720159069,2494,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-37,,true,2489,61,61,null,,0,UTF-8,1,0,administrador,0
+1459720158380,3432,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-38,,true,2489,62,62,null,,0,UTF-8,1,0,administrador,0
+1459720158627,3236,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-24,,true,2489,61,61,null,,0,UTF-8,1,0,administrador,0
+1459720159238,2668,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-44,,true,2489,60,60,null,,0,UTF-8,1,0,administrador,0
+1459720158652,3331,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2430 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-21,,true,2444,59,59,null,,0,UTF-8,1,0,administrador,0
+1459720159540,2483,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-42,,true,2489,58,58,null,,0,UTF-8,1,0,administrador,0
+1459720158191,3857,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2474 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-5,,true,2488,57,57,null,,0,UTF-8,1,0,administrador,0
+1459720159648,2581,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2520 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-34,,true,2534,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720160231,2245,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2565 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-49,,true,2579,58,58,null,,0,UTF-8,1,0,administrador,0
+1459720159205,3274,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-28,,true,2489,57,57,null,,0,UTF-8,1,0,administrador,0
+1459720159643,2837,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-35,,true,2489,57,57,null,,0,UTF-8,1,0,administrador,0
+1459720158966,3519,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-23,,true,2489,57,57,null,,0,UTF-8,1,0,administrador,0
+1459720159561,2942,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2610 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-29,,true,2624,55,55,null,,0,UTF-8,1,0,administrador,0
+1459720160187,2658,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2520 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-41,,true,2534,63,63,null,,0,UTF-8,1,0,administrador,0
+1459720160230,2635,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2700 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-47,,true,2714,63,63,null,,0,UTF-8,1,0,administrador,0
+1459720161071,2080,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2790 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-48,,true,2804,62,62,null,,0,UTF-8,1,0,administrador,0
+1459720159410,3850,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2475 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-36,,true,2489,61,61,null,,0,UTF-8,1,0,administrador,0
+1459720160532,2730,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2790 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-43,,true,2804,61,61,null,,0,UTF-8,1,0,administrador,0
+1459720160046,3803,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2790 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-46,,true,2804,61,61,null,,0,UTF-8,1,0,administrador,0
+1459720161738,2414,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (3195 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-55,,true,3209,60,60,null,,0,UTF-8,1,0,administrador,0
+1459720160211,3943,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (3465 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-39,,true,3479,60,60,null,,0,UTF-8,1,0,administrador,0
+1459720159456,5575,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (2790 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-31,,true,2804,76,76,null,,0,UTF-8,1,0,administrador,0
+1459720160200,5450,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (3465 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-40,,true,3479,77,77,null,,0,UTF-8,1,0,administrador,0
+1459720163327,2545,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4321 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-63,,true,4335,76,76,null,,0,UTF-8,1,0,administrador,0
+1459720164807,1111,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4502 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-69,,true,4516,75,75,null,,0,UTF-8,1,0,administrador,0
+1459720161157,4901,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4005 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-51,,true,4019,74,74,null,,0,UTF-8,1,0,administrador,0
+1459720160201,5985,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (3465 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-45,,true,3479,73,73,null,,0,UTF-8,1,0,administrador,0
+1459720162773,3532,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4684 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-54,,true,4698,73,73,null,,0,UTF-8,1,0,administrador,0
+1459720163153,3287,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4276 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-58,,true,4290,72,72,null,,0,UTF-8,1,0,administrador,0
+1459720161899,4666,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4005 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-50,,true,4019,71,71,null,,0,UTF-8,1,0,administrador,0
+1459720161152,5430,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4005 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-52,,true,4019,70,70,null,,0,UTF-8,1,0,administrador,0
+1459720161839,4739,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4005 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-64,,true,4019,70,70,null,,0,UTF-8,1,0,administrador,0
+1459720163152,3820,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4502 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-60,,true,4516,68,68,null,,0,UTF-8,1,0,administrador,0
+1459720163649,3637,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4684 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-61,,true,4698,70,70,null,,0,UTF-8,1,0,administrador,0
+1459720163188,4334,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4457 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-65,,true,4471,71,71,null,,0,UTF-8,1,0,administrador,0
+1459720163926,3812,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4776 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-57,,true,4790,70,70,null,,0,UTF-8,1,0,administrador,0
+1459720163331,4415,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4502 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-66,,true,4516,70,70,null,,0,UTF-8,1,0,administrador,0
+1459720164925,2856,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4776 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-77,,true,4790,68,68,null,,0,UTF-8,1,0,administrador,0
+1459720163624,4260,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5418 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-71,,true,5432,67,67,null,,0,UTF-8,1,0,administrador,0
+1459720163801,4496,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (4822 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-59,,true,4836,69,69,null,,0,UTF-8,1,0,administrador,0
+1459720164479,3870,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5372 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-53,,true,5386,68,68,null,,0,UTF-8,1,0,administrador,0
+1459720165842,2632,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5510 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-82,,true,5524,67,67,null,,0,UTF-8,1,0,administrador,0
+1459720165206,3444,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5464 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-73,,true,5478,66,66,null,,0,UTF-8,1,0,administrador,0
+1459720165352,3300,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5143 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-75,,true,5157,65,65,null,,0,UTF-8,1,0,administrador,0
+1459720166275,2623,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5464 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-95,,true,5478,70,70,null,,0,UTF-8,1,0,administrador,0
+1459720164089,4936,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5372 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-70,,true,5386,69,69,null,,0,UTF-8,1,0,administrador,0
+1459720165189,3835,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5556 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-81,,true,5570,69,69,null,,0,UTF-8,1,0,administrador,0
+1459720165830,3307,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5510 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-76,,true,5524,67,67,null,,0,UTF-8,1,0,administrador,0
+1459720165843,3393,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5648 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-90,,true,5662,66,66,null,,0,UTF-8,1,0,administrador,0
+1459720166606,2686,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5832 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-89,,true,5846,65,65,null,,0,UTF-8,1,0,administrador,0
+1459720166224,3077,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5694 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-83,,true,5708,64,64,null,,0,UTF-8,1,0,administrador,0
+1459720167071,2657,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5925 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-107,,true,5939,63,63,null,,0,UTF-8,1,0,administrador,0
+1459720167320,2417,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-74,,true,5892,62,62,null,,0,UTF-8,1,0,administrador,0
+1459720166057,3797,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5648 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-84,,true,5662,63,63,null,,0,UTF-8,1,0,administrador,0
+1459720165798,4199,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5832 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-67,,true,5846,62,62,null,,0,UTF-8,1,0,administrador,0
+1459720166675,3334,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5832 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-72,,true,5846,61,61,null,,0,UTF-8,1,0,administrador,0
+1459720165826,4183,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-62,,true,5892,61,61,null,,0,UTF-8,1,0,administrador,0
+1459720165702,4352,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5326 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-79,,true,5340,59,59,null,,0,UTF-8,1,0,administrador,0
+1459720166793,3361,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5648 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-85,,true,5662,58,58,null,,0,UTF-8,1,0,administrador,0
+1459720165690,4464,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5648 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-78,,true,5662,58,58,null,,0,UTF-8,1,0,administrador,0
+1459720163936,6218,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5510 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-87,,true,5524,58,58,null,,0,UTF-8,1,0,administrador,0
+1459720167396,2902,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-96,,true,5892,55,55,null,,0,UTF-8,1,0,administrador,0
+1459720168222,2117,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5924 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-86,,true,5938,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720165940,4407,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-88,,true,5892,53,53,null,,0,UTF-8,1,0,administrador,0
+1459720166430,3920,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5786 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-68,,true,5800,53,53,null,,0,UTF-8,1,0,administrador,0
+1459720167075,3505,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5925 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-105,,true,5939,54,54,null,,0,UTF-8,1,0,administrador,0
+1459720167297,3623,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-92,,true,5892,58,58,null,,0,UTF-8,1,0,administrador,0
+1459720166682,4392,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-80,,true,5892,57,57,null,,0,UTF-8,1,0,administrador,0
+1459720166739,4386,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-98,,true,5892,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720165010,6115,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-56,,true,5892,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720168471,2719,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6063 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-108,,true,6077,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720165055,6134,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5878 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-91,,true,5892,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720167323,3869,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5924 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-94,,true,5938,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720168243,2968,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5925 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-106,,true,5939,56,56,null,,0,UTF-8,1,0,administrador,0
+1459720167873,3865,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5879 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-115,,true,5893,50,50,null,,0,UTF-8,1,0,administrador,0
+1459720169315,2450,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6063 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-124,,true,6077,49,49,null,,0,UTF-8,1,0,administrador,0
+1459720167332,4433,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6155 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-103,,true,6169,49,49,null,,0,UTF-8,1,0,administrador,0
+1459720168469,3422,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5925 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-129,,true,5939,47,47,null,,0,UTF-8,1,0,administrador,0
+1459720167822,4102,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6063 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-118,,true,6077,46,46,null,,0,UTF-8,1,0,administrador,0
+1459720169011,2963,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6339 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-120,,true,6353,45,45,null,,0,UTF-8,1,0,administrador,0
+1459720168299,3675,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5925 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-111,,true,5939,45,45,null,,0,UTF-8,1,0,administrador,0
+1459720167332,4684,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (5924 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-93,,true,5938,45,45,null,,0,UTF-8,1,0,administrador,0
+1459720167921,4096,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6155 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-116,,true,6169,45,45,null,,0,UTF-8,1,0,administrador,0
+1459720168728,3458,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6385 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-119,,true,6399,41,41,null,,0,UTF-8,1,0,administrador,0
+1459720168803,3400,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6430 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-99,,true,6444,40,40,null,,0,UTF-8,1,0,administrador,0
+1459720168241,3973,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6063 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-110,,true,6077,39,39,null,,0,UTF-8,1,0,administrador,0
+1459720167822,4440,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6063 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-114,,true,6077,38,38,null,,0,UTF-8,1,0,administrador,0
+1459720170074,2194,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6569 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-117,,true,6583,38,38,null,,0,UTF-8,1,0,administrador,0
+1459720168450,3820,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6063 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-104,,true,6077,38,38,null,,0,UTF-8,1,0,administrador,0
+1459720168419,3873,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6339 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-101,,true,6353,36,36,null,,0,UTF-8,1,0,administrador,0
+1459720169196,3100,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6339 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-100,,true,6353,36,36,null,,0,UTF-8,1,0,administrador,0
+1459720169996,2304,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6293 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-112,,true,6307,36,36,null,,0,UTF-8,1,0,administrador,0
+1459720168332,3960,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6062 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-97,,true,6076,36,36,null,,0,UTF-8,1,0,administrador,0
+1459720169374,2922,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6339 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-121,,true,6353,36,36,null,,0,UTF-8,1,0,administrador,0
+1459720171046,1502,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6569 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-123,,true,6583,30,30,null,,0,UTF-8,1,0,administrador,0
+1459720168397,4205,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6339 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-109,,true,6353,29,29,null,,0,UTF-8,1,0,administrador,0
+1459720171406,1246,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6569 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-127,,true,6583,28,28,null,,0,UTF-8,1,0,administrador,0
+1459720168909,3743,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6523 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-126,,true,6537,28,28,null,,0,UTF-8,1,0,administrador,0
+1459720168734,4090,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6477 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-102,,true,6491,26,26,null,,0,UTF-8,1,0,administrador,0
+1459720168729,4186,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6569 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-113,,true,6583,25,25,null,,0,UTF-8,1,0,administrador,0
+1459720170048,2911,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6293 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-130,,true,6307,24,24,null,,0,UTF-8,1,0,administrador,0
+1459720171692,1275,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6569 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-132,,true,6583,24,24,null,,0,UTF-8,1,0,administrador,0
+1459720172051,1145,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-133,,true,6951,22,22,null,,0,UTF-8,1,0,administrador,0
+1459720171241,1963,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6707 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-122,,true,6721,22,22,null,,0,UTF-8,1,0,administrador,0
+1459720172196,1007,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6891 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-131,,true,6905,22,22,null,,0,UTF-8,1,0,administrador,0
+1459720170151,3047,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6707 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-125,,true,6721,22,22,null,,0,UTF-8,1,0,administrador,0
+1459720172565,1047,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-134,,true,6951,18,18,null,,0,UTF-8,1,0,administrador,0
+1459720172089,1594,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-128,,true,6951,17,17,null,,0,UTF-8,1,0,administrador,0
+1459720172367,1427,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-142,,true,6951,16,16,null,,0,UTF-8,1,0,administrador,0
+1459720172478,1315,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-139,,true,6951,16,16,null,,0,UTF-8,1,0,administrador,0
+1459720172483,1310,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-137,,true,6951,16,16,null,,0,UTF-8,1,0,administrador,0
+1459720172787,1007,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-140,,true,6951,16,16,null,,0,UTF-8,1,0,administrador,0
+1459720172419,1375,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-135,,true,6951,16,16,null,,0,UTF-8,1,0,administrador,0
+1459720173047,748,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-150,,true,6951,16,16,null,,0,UTF-8,1,0,administrador,0
+1459720173046,746,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-138,,true,6951,16,16,null,,0,UTF-8,1,0,administrador,0
+1459720172870,943,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-136,,true,6951,10,10,null,,0,UTF-8,1,0,administrador,0
+1459720173321,509,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-149,,true,6951,9,9,null,,0,UTF-8,1,0,administrador,0
+1459720173317,553,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-147,,true,6951,9,9,null,,0,UTF-8,1,0,administrador,0
+1459720173323,548,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-146,,true,6951,9,9,null,,0,UTF-8,1,0,administrador,0
+1459720173337,601,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-145,,true,6951,8,8,null,,0,UTF-8,1,0,administrador,0
+1459720172448,1490,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-141,,true,6951,8,8,null,,0,UTF-8,1,0,administrador,0
+1459720173295,700,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-144,,true,6951,3,3,null,,0,UTF-8,1,0,administrador,0
+1459720173278,720,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-143,,true,6951,3,3,null,,0,UTF-8,1,0,administrador,0
+1459720173313,722,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (6937 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-148,,true,6951,1,1,null,,0,UTF-8,1,0,administrador,0
+1459721375537,570,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-4,,true,653,10,10,null,,0,UTF-8,1,0,administrador,0
+1459721375488,626,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-8,,true,653,9,9,null,,0,UTF-8,1,0,administrador,0
+1459721375512,620,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-2,,true,653,9,9,null,,0,UTF-8,1,0,administrador,0
+1459721375495,654,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-9,,true,653,7,7,null,,0,UTF-8,1,0,administrador,0
+1459721375527,620,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-1,,true,653,7,7,null,,0,UTF-8,1,0,administrador,0
+1459721375516,685,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-7,,true,653,5,5,null,,0,UTF-8,1,0,administrador,0
+1459721375533,711,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-3,,true,653,4,4,null,,0,UTF-8,1,0,administrador,0
+1459721375530,717,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-5,,true,653,3,3,null,,0,UTF-8,1,0,administrador,0
+1459721375509,779,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (639 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-6,,true,653,2,2,null,,0,UTF-8,1,0,administrador,0
+1459721375491,811,Ingresar usuarios,200,"
+
+[Execution Flow]
+ - Opening new connection
+ - Using response message pattern """"
+ - Using disconnect pattern """"
+ - Waiting for the server connection for 5000 MILLISECONDS
+ - WebSocket conection has been opened
+ - Connection established
+ - Waiting for messages for 20000 MILLISECONDS
+ - Received message #1 (640 bytes); matched response pattern
+ - WebSocket conection has been successfully closed by the server
+ - WebSocket session closed by the client
+ - WebSocket client closed by the client
+
+
+[Variables]
+ - Message count: 1
+
+
+[Problems]
+",Registro usuarios  1-10,,true,654,1,1,null,,0,UTF-8,1,0,administrador,0
