@@ -15,6 +15,7 @@ app.controller("controlador", function($scope)
     $scope.verusuario = "";
     $scope.upload={"puerto":"","nombre":"nombre"};
     $scope.micanal=[];
+    $scope.canalactual="";
     
     $scope.vistaSuscritos=false;
     $scope.vistaAdministrar=false;
@@ -115,40 +116,47 @@ app.controller("controlador", function($scope)
     {
         enviado=false;
         var file = document.querySelector('input[type="file"]').files[0];
-        $scope.upload.nombre=file.name;
-        var socket = new WebSocket(rutaVideos);
-        socket.onopen = function ()
+        if (file!= undefined)
         {
-            $scope.$apply(function () 
+
+            $scope.upload.nombre = file.name;
+            var socket = new WebSocket(rutaVideos);
+            socket.onopen = function ()
             {
-                escribirConsola("\nWS: Creado en " + rutaServer);
-                socket.send(JSON.stringify($scope.upload));
-                escribirConsola("\nWS: ENVIADO: "+JSON.stringify($scope.upload));
-            });            
-        };
-        socket.onmessage=function (event)        
+                $scope.$apply(function ()
+                {
+                    escribirConsola("\nWS: Creado en " + rutaServer);
+                    socket.send(JSON.stringify($scope.upload));
+                    escribirConsola("\nWS: ENVIADO: " + JSON.stringify($scope.upload));
+                });
+            };
+            socket.onmessage = function (event)
+            {
+                var obtenido = event.data;
+                $scope.$apply(function ()
+                {
+                    escribirConsola("WS: RECIBIDO: " + obtenido);
+                    if (!enviado)
+                    {
+                        socket.send(file);
+                        enviado = true;
+                        document.getElementById("file_picker").value = "";
+                    } else
+                    {
+                        $scope.upload.result = JSON.parse(obtenido);
+                        socket.close();
+                        escribirConsola("WS: Socket para subida de videos cerrado");
+                        $scope.micanal = $scope.upload.result.videos;
+                        $scope.msjUpload = $scope.upload.result.msj;
+                    }
+
+                });
+
+            }
+        }
+        else
         {
-            var obtenido = event.data;
-            $scope.$apply(function () 
-            {
-                escribirConsola("WS: RECIBIDO: " + obtenido);
-               if(!enviado) 
-               {
-                   socket.send(file);
-                   enviado=true;
-                   file=null;
-               }
-               else
-               {
-                   $scope.upload.result=JSON.parse(obtenido);
-                   socket.close();
-                   escribirConsola("WS: Socket para subida de videos cerrado");
-                   $scope.micanal=$scope.upload.result.videos;
-                   $scope.msjUpload=$scope.upload.result.msj;
-               }
-                
-            });
-            
+            alert("Seleccione el usuario que desea publicar");
         }
        
     }
@@ -176,6 +184,8 @@ app.controller("controlador", function($scope)
         var formulario = document.getElementById("divregistro");
         formulario.style.display = "inline";
         document.getElementById("div_login").style.display="inline-block";
+        
+        document.getElementById("tv").src="";
 
         $scope.vistaSuscritos = false;
         $scope.vistaAdministrar = false;
@@ -189,7 +199,7 @@ app.controller("controlador", function($scope)
     {
         $scope.vercanal=canal;
         $scope.verusuario=usuario;
-        alert("El usuario desea ver el canal del usuario "+usuario+" que está en el puerto "+canal);
+        document.getElementById("tv").src="localhost:"+canal;
     }
     
         
